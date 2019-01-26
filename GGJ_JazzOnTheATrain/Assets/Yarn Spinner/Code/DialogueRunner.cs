@@ -94,12 +94,12 @@ namespace Yarn.Unity
 			// Ensure that the variable storage has the right stuff in it
 			variableStorage.ResetToDefaults ();
 
-			GlobalManager gm = FindObjectOfType(typeof(GlobalManager)) as GlobalManager;
-			if(gm)
-			{
-				startNode = "Start";
-				sourceText = new TextAsset[1]{gm.currentTextAsset};
-			}
+			//GlobalManager gm = FindObjectOfType(typeof(GlobalManager)) as GlobalManager;
+			//if(gm)
+			//{
+			//	startNode = "Start";
+			//	sourceText = new TextAsset[1]{gm.currentTextAsset};
+			//}
 			// Load all JSON
 			foreach (var source in sourceText) {
 				dialogue.LoadString (source.text, source.name);

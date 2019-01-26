@@ -48,8 +48,8 @@ public class ExampleDialogueUI : Yarn.Unity.DialogueUIBehaviour
 		public bool fading; 
 		public int endDate;
 		public GameObject display;
-		public PreConcert preConcert;
-		SceneGuy sg;
+		//public PreConcert preConcert;
+		//SceneGuy sg;
 
 		//Yarn Command used to set the number of node layers in VN scenes.
 		[YarnCommand("layerSet")]
@@ -139,8 +139,8 @@ public class ExampleDialogueUI : Yarn.Unity.DialogueUIBehaviour
 			// Hide the continue prompt if it exists
 			if (continuePrompt != null)
 				continuePrompt.SetActive (false);
-			GlobalManager gm = FindObjectOfType(typeof(GlobalManager)) as GlobalManager;
-			sg = GameObject.Find ("GlobalStats").GetComponent<SceneGuy> ();
+			//GlobalManager gm = FindObjectOfType(typeof(GlobalManager)) as GlobalManager;
+			//sg = GameObject.Find ("GlobalStats").GetComponent<SceneGuy> ();
 			layersDeep = 1;
 		}
 			
@@ -212,7 +212,7 @@ public class ExampleDialogueUI : Yarn.Unity.DialogueUIBehaviour
 				optionButtons [i].gameObject.SetActive (true);
 				optionButtons [i].GetComponentInChildren<Text> ().text = optionString;
 				i++;
-				KeyboardControls.numOfChoices = optionsCollection.options.Count - 1;
+				//KeyboardControls.numOfChoices = optionsCollection.options.Count - 1;
 			}
 			
 			// Record that we're using it
@@ -270,7 +270,7 @@ public class ExampleDialogueUI : Yarn.Unity.DialogueUIBehaviour
 		public override IEnumerator DialogueComplete ()
 		{
 			Debug.Log ("Complete!");
-			GlobalManager gm = FindObjectOfType (typeof(GlobalManager)) as GlobalManager;
+			//GlobalManager gm = FindObjectOfType (typeof(GlobalManager)) as GlobalManager;
 			// Hide the dialogue interface.
 			if (dialogueContainer != null)
 				dialogueContainer.SetActive(false);
@@ -281,42 +281,42 @@ public class ExampleDialogueUI : Yarn.Unity.DialogueUIBehaviour
 				gameControlsContainer.gameObject.SetActive(true);
 			}
 				
-			if (layersDeep == 1) 
-			{
-				if (gm) 
-				{
-					if (gm.dayIndex >= endDate) 
-					{
-						gm.myState = PlayerState.endScreen;
-						sg.transitionScene("End");
-					} else if (gm.performance)
-					{
-						preConcert.startPreConcert ();
-					}
-					else
-					{
-						gm.myState = PlayerState.timescheduling;
-						sg.transitionScene("Main");
-						gm.saveStartofWeekScores (gm.gameObject.GetComponent<CalendarTracker>().displayDate + " - " + gm.gameObject.GetComponent<CalendarTracker>().oneWeeklater);
-					}
-					gm.gameObject.GetComponent<CalendarTracker> ().advanceDay ();
-				} 
-				else 
-				{
-					sg.transitionScene ("Main");
-					gm.gameObject.GetComponent<CalendarTracker> ().advanceDay ();
-				}
-			} 
-			else 
-			{
-				DialogueRunner dr = GetComponent<DialogueRunner> (); 
-				string nodeString = dr.sourceText [0].name + layersDeep;
-				Debug.Log (nodeString);
-				dr.startNode = StoryManager.findNewNode (dr.sourceText [0].name, layersDeep);
-				StoryManager.nodesVisited.Add (dr.startNode); 
-				dr.StartDialogue (); 
-				layersDeep--;
-			}
+			//if (layersDeep == 1) 
+			//{
+			//	if (gm) 
+			//	{
+			//		if (gm.dayIndex >= endDate) 
+			//		{
+			//			gm.myState = PlayerState.endScreen;
+			//			sg.transitionScene("End");
+			//		} else if (gm.performance)
+			//		{
+			//			preConcert.startPreConcert ();
+			//		}
+			//		else
+			//		{
+			//			gm.myState = PlayerState.timescheduling;
+			//			sg.transitionScene("Main");
+			//			gm.saveStartofWeekScores (gm.gameObject.GetComponent<CalendarTracker>().displayDate + " - " + gm.gameObject.GetComponent<CalendarTracker>().oneWeeklater);
+			//		}
+			//		gm.gameObject.GetComponent<CalendarTracker> ().advanceDay ();
+			//	} 
+			//	else 
+			//	{
+			//		sg.transitionScene ("Main");
+			//		gm.gameObject.GetComponent<CalendarTracker> ().advanceDay ();
+			//	}
+			//} 
+			//else 
+			//{
+			//	DialogueRunner dr = GetComponent<DialogueRunner> (); 
+			//	string nodeString = dr.sourceText [0].name + layersDeep;
+			//	Debug.Log (nodeString);
+			//	dr.startNode = StoryManager.findNewNode (dr.sourceText [0].name, layersDeep);
+			//	StoryManager.nodesVisited.Add (dr.startNode); 
+			//	dr.StartDialogue (); 
+			//	layersDeep--;
+			//}
 
 			yield break;
 		}

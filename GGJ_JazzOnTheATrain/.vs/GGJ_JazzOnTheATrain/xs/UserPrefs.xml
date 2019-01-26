@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{C19D70FD-615B-0617-0569-1F6D7EFF70EE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Yarn Spinner/Code/DialogueRunner.cs">
+    <Files>
+      <File FileName="Assets/Yarn Spinner/Examples/Demo Scripts/ExampleDialogueUI.cs" Line="319" Column="7" />
+      <File FileName="Assets/Yarn Spinner/Code/DialogueRunner.cs" Line="98" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
