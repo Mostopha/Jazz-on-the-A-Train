@@ -73,16 +73,41 @@ namespace Yarn.Unity.Example {
 
 			transform.position = newPosition;
 
+            
 			// Detect if we want to start a conversation
 
-			if (Input.GetKeyDown(KeyCode.Space)) {
-				CheckForNearbyNPC ();
-			}
-		}
+            SceneChanger.sceneChanger.CheckForSceneChange(this);
+            if (IsInteracting())
+            {
+                CheckForNearbyNPC();
+            }
+        }
+
+        public bool IsInteracting()
+        {
+            KeyCode[] interactionKeys =
+            {
+                KeyCode.Mouse1,
+                KeyCode.Return,
+                KeyCode.Space,
+                KeyCode.O
+            };
+            if (Input.anyKeyDown)
+            {
+                foreach (KeyCode key in interactionKeys)
+                {
+                    if (Input.GetKeyDown(key))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
 
 
-
-		public void CheckForNearbyNPC ()
+        public void CheckForNearbyNPC ()
 		{
 			// Find all DialogueParticipants, and filter them to
 			// those that have a Yarn start node and are in range; 
