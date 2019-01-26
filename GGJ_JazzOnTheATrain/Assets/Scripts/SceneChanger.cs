@@ -10,6 +10,7 @@ public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger sceneChanger;
 
+    private Room room;
 
     public SceneChanger()
     {
@@ -56,6 +57,7 @@ public class SceneChanger : MonoBehaviour
         //        SceneManager.MoveGameObjectToScene();
         print("switching to scene" + door.ToSceneName);
         SceneManager.LoadScene(door.ToSceneName);
+        print("current scene is now " + SceneManager.GetActiveScene().name);
     }
 
     private bool IsInRangeOfDoor(float playerX, Door door)
