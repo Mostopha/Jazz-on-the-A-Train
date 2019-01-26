@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JazzOnTheA/Room 3.unity
     guid: 410636bd24824934aa4472a89def9796
+  - enabled: 1
+    path: Assets/Scenes/New Orleans 1.unity
+    guid: 50ea84c93bc249844be540270fc0c833
   m_configObjects: {}
