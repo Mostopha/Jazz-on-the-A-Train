@@ -26,6 +26,7 @@ SOFTWARE.
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.Serialization;
 
 namespace Yarn.Unity.Example {
@@ -50,7 +51,10 @@ namespace Yarn.Unity.Example {
 		
 		// Update is called once per frame
 		void Update () {
-			
+            if (Input.anyKeyDown)
+            {
+
+            }
 		}
 	}
 

@@ -73,12 +73,15 @@ namespace Yarn.Unity.Example {
 
 			transform.position = newPosition;
 
+            
 			// Detect if we want to start a conversation
 
-			if (Input.GetKeyDown(KeyCode.Space)) {
-				CheckForNearbyNPC ();
-			}
-		}
+            SceneChanger.sceneChanger.CheckForSceneChange(newPosition.x, movement);
+            if (Input.anyKeyDown)
+            {
+                CheckForNearbyNPC();
+            }
+        }
 
 
 
