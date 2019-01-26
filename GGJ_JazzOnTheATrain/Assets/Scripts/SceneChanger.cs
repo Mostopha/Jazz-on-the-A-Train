@@ -15,7 +15,6 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         print("current scene is now " + SceneManager.GetActiveScene().name);
         sceneChanger = this;
         print("Previous scene was: " + GameState.get().previousSceneName);
@@ -48,13 +47,28 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+    private void SelectLocationFromMap(string locationStartingSceneName)
+    {
+        Door trainDoor = null;
+        Door[] doors = Object.FindObjectsOfType<Door>();
+        foreach (Door door in doors)
+        {
+            if (!door.ToSceneName.Contains("Train"))
+            {
+                trainDoor = door;
+            }
+        }
+
+        trainDoor.ToSceneName = locationStartingSceneName;
+    }
+
     private void EnterDoor(Door door)
     {
         print("switching to scene" + door.ToSceneName);
-        
+
         GameState.get().trackEvent(new GameEvent("Exit Scene", SceneManager.GetActiveScene().name));
         SceneManager.LoadScene(door.ToSceneName);
-   }
+    }
 
     private bool IsInRangeOfDoor(float playerX, Door door)
     {
