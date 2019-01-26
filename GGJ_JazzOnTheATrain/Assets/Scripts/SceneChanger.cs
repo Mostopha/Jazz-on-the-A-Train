@@ -12,17 +12,13 @@ public class SceneChanger : MonoBehaviour
 
     private Room room;
 
-    public SceneChanger()
-    {
-        if (sceneChanger == null)
-        {
-            sceneChanger = this;
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
+
+        print("current scene is now " + SceneManager.GetActiveScene().name);
+        sceneChanger = this;
+        print("Previous scene was: " + GameState.get().previousSceneName);
     }
 
     // Update is called once per frame
@@ -54,11 +50,11 @@ public class SceneChanger : MonoBehaviour
 
     private void EnterDoor(Door door)
     {
-        //        SceneManager.MoveGameObjectToScene();
         print("switching to scene" + door.ToSceneName);
+        
+        GameState.get().trackEvent(new GameEvent("Exit Scene", SceneManager.GetActiveScene().name));
         SceneManager.LoadScene(door.ToSceneName);
-        print("current scene is now " + SceneManager.GetActiveScene().name);
-    }
+   }
 
     private bool IsInRangeOfDoor(float playerX, Door door)
     {
@@ -66,11 +62,8 @@ public class SceneChanger : MonoBehaviour
         return Math.Abs(door.transform.position.x - playerX) < 1.5;
     }
 
-    private bool IsExitingSceneRight(float position, float movement)
+    public static SceneChanger getSceneChanger()
     {
-//        Object.FindObjectOfType(typeof(Door));
-//        SceneManager.GetActiveScene().
-//        return position 
-        return false;
+        return sceneChanger;
     }
 }

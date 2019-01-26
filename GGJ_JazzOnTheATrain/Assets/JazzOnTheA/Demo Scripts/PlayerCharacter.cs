@@ -76,7 +76,7 @@ namespace Yarn.Unity.Example {
             
 			// Detect if we want to start a conversation
 
-            SceneChanger.sceneChanger.CheckForSceneChange(this);
+            SceneChanger.getSceneChanger().CheckForSceneChange(this);
             if (IsInteracting())
             {
                 CheckForNearbyNPC();
