@@ -12,6 +12,9 @@ public class Inventory : MonoBehaviour
     public Text ButtonText;
     bool InventoryActive;
 
+    public static bool NYVisited;
+    public static bool CAVisited;
+
     // Start is called before the first frame update
     void Start()
     {
