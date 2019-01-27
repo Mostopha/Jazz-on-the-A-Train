@@ -12,7 +12,7 @@
 	{
 		"title": "TalkToFriend2",
 		"tags": "",
-		"body": "Familiar Face: Can't be helped, I suppose.\n\nFamiliar Face: Say, you still remember the ol' New Orleans Jam?\n\n[[Jazz: I do, why?|TalkToFriend3]]",
+		"body": "Can't be helped, I suppose.\n\nSay, you still remember the ol' New Orleans Jam?\n\n[[Jazz: I do, why?|TalkToFriend3]]",
 		"position": {
 			"x": 885,
 			"y": 1711
@@ -22,7 +22,7 @@
 	{
 		"title": "TalkToFriend3",
 		"tags": "",
-		"body": "Familiar Face: Got a minute to play with an old pal?\n\n[[Jazz: I should get home|GetHome]]\n\n[[Jazz: For sure!|TalkToFriend4]]",
+		"body": "Got a minute to play with an old pal?\n\n[[Jazz: I should get home|GetHome]]\n\n[[Jazz: For sure!|TalkToFriend4]]",
 		"position": {
 			"x": 1181,
 			"y": 1711
@@ -32,7 +32,7 @@
 	{
 		"title": "TalkToFriend4",
 		"tags": "",
-		"body": "Familiar Face: Alright, let's do this!\n\n[[Play a saxophone|NewOrleansFail]]\n\n[[Play the clarient|NewOrleansWin]]",
+		"body": "Alright, let's do this!\n\n[[Play a saxophone|NewOrleansFail]]\n\n[[Play the clarinet|NewOrleansWin]]",
 		"position": {
 			"x": 1476,
 			"y": 1723
@@ -42,7 +42,7 @@
 	{
 		"title": "NewOrleansFail",
 		"tags": "",
-		"body": "Familiar Face: That's not how we do it in New Orleans! You've changed Jazz.\n\n",
+		"body": "That's not how we do it in New Orleans! You've changed Jazz.\n\n",
 		"position": {
 			"x": 1836,
 			"y": 1632
@@ -52,7 +52,7 @@
 	{
 		"title": "NewOrleansWin",
 		"tags": "",
-		"body": "Familiar Face: That's how you do it! You've changed, but you still remember your roots!\n\nFamiliar Face: Here, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = false>>",
+		"body": "That's how you do it! You've changed, but you still remember your roots!\n\nHere, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = false>>",
 		"position": {
 			"x": 1473,
 			"y": 1176

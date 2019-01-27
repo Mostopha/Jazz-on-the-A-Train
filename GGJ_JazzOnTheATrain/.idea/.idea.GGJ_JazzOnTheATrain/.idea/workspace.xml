@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="416">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <marker date="1548604378138" expanded="true" signature="6:118" ph="..." />
                 <marker date="1548604378138" expanded="true" signature="158:2774" ph="{...}" />
@@ -363,12 +363,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548566157702</updated>
       <workItem from="1548566165213" duration="6499000" />
-      <workItem from="1548604532160" duration="2457000" />
+      <workItem from="1548604532160" duration="3652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8956000" />
+    <option name="totallyTimeSpent" value="10151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="416">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
             <marker date="1548604378138" expanded="true" signature="6:118" ph="..." />
             <marker date="1548604378138" expanded="true" signature="158:2774" ph="{...}" />
