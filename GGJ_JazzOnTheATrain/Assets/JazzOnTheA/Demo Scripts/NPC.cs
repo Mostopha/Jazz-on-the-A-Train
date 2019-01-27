@@ -28,12 +28,14 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.Serialization;
+using Yarn.Unity;
 
 namespace Yarn.Unity.Example
 {
     public class NPC : PlayerProximityActivated
     {
         public string characterName = "";
+        Animator anim;
 
         [FormerlySerializedAs("startNode")] public string talkToNode = "";
 
@@ -70,6 +72,14 @@ namespace Yarn.Unity.Example
             {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
+            anim = GetComponent<Animator>();
+        }
+
+        [YarnCommand("anim")]
+        public void Animate(string trigger)
+        {
+            anim.SetTrigger(trigger);
         }
     }
+
 }

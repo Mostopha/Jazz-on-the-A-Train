@@ -22,7 +22,7 @@
 	{
 		"title": "FailCali",
 		"tags": "",
-		"body": "Cool Cat: Sorry, but  you just don't got the chill.\n",
+		"body": "Cool Cat: Sorry, but  you just don't got the chill.\n<<FadeOut BlackOut>>\n",
 		"position": {
 			"x": 643,
 			"y": 1566
@@ -62,7 +62,7 @@
 	{
 		"title": "CaliforniaWin",
 		"tags": "",
-		"body": "Cool Cat: You hit on all sixes there! Here have this.\n\nYOU HAVE RECEIVED THE SPIRIT OF COOL JAZZ\n\nCool Cat: You've more than earned this!\n\n\n<<set $inventory = $inventory+1>>\n<<set $cool = true>>\n<<Get Manager CoolJazz>>\n",
+		"body": "Cool Cat: You hit on all sixes there! Here have this.\n\nYOU HAVE RECEIVED THE SPIRIT OF COOL JAZZ\n\nCool Cat: You've more than earned this!\n\n\n<<set $inventory = $inventory+1>>\n<<set $cool = true>>\n<<Get Manager CoolJazz>>\n<<FadeOut BlackOut>>\n",
 		"position": {
 			"x": 530,
 			"y": 2142

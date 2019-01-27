@@ -16,13 +16,13 @@ public class ExpandedTrainMap : IntrusiveGuiOverlay
         switch (buttonText.text)
         {
             case "New Orleans":
-                locationSceneName = "New Orleans 1";
+                locationSceneName = "NewOrleans1";
                 break;
             case "New York":
-                locationSceneName = "New York 1";
+                locationSceneName = "NewYork1";
                 break;
             case "California":
-                locationSceneName = "California 1";
+                locationSceneName = "California1";
                 break;
             default:
                 locationSceneName = buttonText.text;
