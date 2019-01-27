@@ -125,6 +125,12 @@ public class ExampleDialogueUI : Yarn.Unity.DialogueUIBehaviour
 
 		void Awake ()
 		{
+
+			if (lineText == null)
+			{
+				lineText = GameObject.Find("LineText").gameObject.GetComponent<Text>();
+			}
+			
 			style.richText = true;
 			// Start by hiding the container, line and option buttons
 			if (dialogueContainer != null)
