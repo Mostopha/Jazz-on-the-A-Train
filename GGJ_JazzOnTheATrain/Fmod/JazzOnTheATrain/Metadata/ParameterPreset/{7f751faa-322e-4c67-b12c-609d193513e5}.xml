@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{7f751faa-322e-4c67-b12c-609d193513e5}">
+        <property name="name">
+            <value>Swing1</value>
+        </property>
+        <relationship name="folder">
+            <destination>{fe9b55e6-a935-43c1-bdae-a53c634a7b27}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{a99b2296-4ac8-44c2-b025-d5193412e288}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{a99b2296-4ac8-44c2-b025-d5193412e288}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

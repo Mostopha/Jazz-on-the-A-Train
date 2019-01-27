@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ee7502b6-cc19-4cca-a0df-bf2f4d213a0b}">
+        <property name="assetPath">
+            <value>NOLA_Kid Ory - Muskrat Ramble (1945) [Digitally Remastered].mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>222.38040816326532</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a4d685da-3227-4a35-a4b3-4eb3ce9f0e40}</destination>
+        </relationship>
+    </object>
+</objects>
