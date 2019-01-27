@@ -12,7 +12,7 @@
 	{
 		"title": "California1",
 		"tags": "",
-		"body": "The soft notes faded in and out, in sync with the gentle ebb and flow of the Pacific Ocean.\n\nThey spoke to you of lazy Summer Afternoons and evenings spent staring off into the sea\n\nSeeing your interest one of the musicians waved you down.\n\nCool cat: You diggin' our tunes, cat?\n\n[[Jazz: What are you playing?|California2]]\n\n[[Jazz: Not really my jam, man|FailCali]]",
+		"body": "The soft notes faded in and out, in sync with the gentle ebb and flow of the Pacific Ocean.\n\nThey spoke to you of lazy Summer Afternoons and evenings spent staring off into the sea\n\nSeeing your interest one of the musicians waved you down.\n\n<<anim CoolCat Talking>>\nCool cat: You diggin' our tunes, cat?\n\n[[Jazz: What are you playing?|California2]]\n\n[[Jazz: Not really my jam, man|FailCali]]",
 		"position": {
 			"x": 335,
 			"y": 1458
@@ -22,7 +22,7 @@
 	{
 		"title": "FailCali",
 		"tags": "",
-		"body": "Cool Cat: Sorry, but  you just don't got the chill.\n<<FadeOut BlackOut>>\n",
+		"body": "Cool Cat: Sorry, but  you just don't got the chill.",
 		"position": {
 			"x": 643,
 			"y": 1566
@@ -62,7 +62,7 @@
 	{
 		"title": "CaliforniaWin",
 		"tags": "",
-		"body": "Cool Cat: You hit on all sixes there! Here have this.\n\nYOU HAVE RECEIVED THE SPIRIT OF COOL JAZZ\n\nCool Cat: You've more than earned this!\n\n\n<<set $inventory = $inventory+1>>\n<<set $cool = true>>\n<<Get Manager CoolJazz>>\n<<FadeOut BlackOut>>\n",
+		"body": "Cool Cat: You hit on all sixes there! Here have this.\n\nYOU HAVE RECEIVED THE SPIRIT OF COOL JAZZ\n\nCool Cat: You've more than earned this!\n\n\n<<set $inventory = $inventory+1>>\n<<set $cool = true>>\n<<Get Manager CoolJazz>>\n",
 		"position": {
 			"x": 530,
 			"y": 2142
