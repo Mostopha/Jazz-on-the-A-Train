@@ -1,0 +1,442 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "RagTime: Jazz, honey, hope you ain't misbehavin' down there in Kansas.\r\n\r\n\r\n[[Jazz: You know it, pops. |Intro1]]\r\n\r\n[[Jazz: Can't be staying out late. |Intro1]]",
+		"position": {
+			"x": -26,
+			"y": 340
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro1",
+		"tags": "",
+		"body": "RagTime: That's what I like to hear! When you coming back to New Orleans?\r\n\r\n\r\n[[Jazz: I'll be down by Christmas time|Intro2]]\r\n",
+		"position": {
+			"x": 252,
+			"y": 352
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro2",
+		"tags": "",
+		"body": "RagTime: Your mother and I can't wait to see you. But you better not come home like another damn dewdropper. Bring something nice!\r\n\r\n[[Jazz: Something nice, pops?|Intro3]]",
+		"position": {
+			"x": 512,
+			"y": 350
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro3",
+		"tags": "",
+		"body": "RagTime: Yeah something nice - you know? Something hot, something cool, with a a bit of swing thrown in for good measure|.\r\n\r\nYou get me?\r\n\r\n\r\n[[Jazz: Something hot?|hotJazz]]\r\n[[Jazz: Something cool?|coolJazz]]\r\n[[Jazz: A bit of swing?|swingJazz]]\r\n[[Jazz: Of course, pops|Intro4]]",
+		"position": {
+			"x": 317,
+			"y": 628
+		},
+		"colorID": 0
+	},
+	{
+		"title": "hotJazz",
+		"tags": "",
+		"body": "Good old New Orleans Jazz! Hot, brassy, fun.\r\n\r\nCan't go wrong with it.\r\n\r\n[[Jazz: Gotcha|Intro3]]",
+		"position": {
+			"x": 876,
+			"y": 619
+		},
+		"colorID": 0
+	},
+	{
+		"title": "coolJazz",
+		"tags": "",
+		"body": "Jazz and fun under the sun. If you stop by Cali, a tan better not be all you're getting.\n\n[[Jazz: I see|Intro3]]\n",
+		"position": {
+			"x": -8,
+			"y": 614
+		},
+		"colorID": 0
+	},
+	{
+		"title": "swingJazz",
+		"tags": "",
+		"body": "Swing music, bebop and all the good stuff. \r\n\r\nBe sure to check out the jazz scene in the Big Apple when you swing by.\r\n\r\n[[Jazz: I see|Intro3]]",
+		"position": {
+			"x": 779,
+			"y": 343
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro4",
+		"tags": "",
+		"body": "RagTime: I'll see you on the 25th then. I am sure I don't need to tell you what train to catch now do I?\r\n\r\n[[Take the A Train|TrainHub]]\r\n<<set $day = 23>>\r\n<<set $NY = false>>\r\n<<set $NO = false>>\r\n<<set $CA = false>>\r\n<<set $bebop = false>>\r\n<<set $swing = false>>\r\n<<set $cool = false>>\r\n<<set $vanilla = false>>\r\n<<set $inventory = 0>>\r\n\r\n",
+		"position": {
+			"x": 606,
+			"y": 622
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrainHub",
+		"tags": "",
+		"body": "<<silently>>\r\n<<set $day = $day+1>>\r\n<<endsilently>>\r\n\r\nDay <<$day>> December 192x.\r\n\r\nChoose your destination\r\n\r\n<<if $NY is false>>\r\n[[New York|NewYork]]\r\n<<endif>>\r\n\r\n<<if $CA = false>>\r\n[[California|California]]\r\n<<endif>>\r\n\r\n<<if $NO = false>>\r\n[[New Orleans|NewOrleans]]\r\n<<endif>>",
+		"position": {
+			"x": 337,
+			"y": 951
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NewYork",
+		"tags": "",
+		"body": "<<set $NY = true>>\nThe Apple.\n\nGrand. Mysterious. Busy. So very busy.\n\nGrand Central's got it's fair share of cool cats. But the clubs are where it's really happening.\n\nWhere do you want to go?\n\n\n[[Blue Note|NewYork2]]\n\n[[Birdland|NewYork2]]\n\n[[Smalls Jazz Club|NewYork2]]\n",
+		"position": {
+			"x": -286,
+			"y": 903
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NewYork2",
+		"tags": "",
+		"body": "So this is what your pops meant by Swing.\n\nEnergetic. Orderly. Danceable. Very very danceable. \n\nHot like New Orleans, but not as brassy. Saxophones - you don't see those everyday\n\nA Dapper Gentleman approaches you.\n\nDapper Gentleman: Here to take a bite out of the Big Apple?\n\n[[Jazz: I guess|NewYork3]]",
+		"position": {
+			"x": -551,
+			"y": 1116
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NewYork3",
+		"tags": "",
+		"body": "Dapper Gentleman: Bet you're thinking this is the cat's meow, ain't ya, doll?\n\n[[Jazz: And how!|LikeSwing]]\n\n[[Jazz: Not really|DislikeSwing]] \n\n",
+		"position": {
+			"x": -284,
+			"y": 1117
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LikeSwing",
+		"tags": "",
+		"body": "Dapper Stranger: You have fine taste there, pal. You much of a swing dancer?\n\n[[Jazz: Ab-so-lute-ly|StaySwing]]\n\n[[Jazz: Not really|SwingFail]]\n",
+		"position": {
+			"x": -545,
+			"y": 1380
+		},
+		"colorID": 0
+	},
+	{
+		"title": "DislikeSwing",
+		"tags": "",
+		"body": "???: Finally, a cat that's not afraid to say what's what in this joint.\n\nAn energetic individual interjected.\n\nDapper Gentleman: Beat it, rag-a-muffin. You wouldn't know good music if it bit ya in the bum.\n\nSpike: Go chase yourself, ya sap. \n\nSpike:You're gonna find out staying in that box isn't as ritzy as you think. \n\nSpike:And, when you do, I am gonna be waiting right here for ya!\n\nDapper Gentleman: Keep dreaming, pal.\n\nSpike: So what'll it be, cool cat?\n\nThe energetic individual addressed you\n\nSpike: You wanna quit this joint and come listen to something out of this world?\n\n[[Jazz: Lead the way, daddy-O|BebopBar]]\n\n[[Jazz: Lead the way|BebopFail]]",
+		"position": {
+			"x": -14,
+			"y": 1116
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BebopBar",
+		"tags": "",
+		"body": "Complex harmonies. Complex chord progressions. Improvisatory and spontaneous.\n\nSpike: You like it, cool cat? This is Bebop!!\n\n[[Jazz: I love it!|BebopWin]]\n\n[[Jazz: I can't dance to this|BebopAlmostLoss]]",
+		"position": {
+			"x": -281,
+			"y": 1370
+		},
+		"colorID": 0
+	},
+	{
+		"title": "StaySwing",
+		"tags": "",
+		"body": "You let the tunes move you across the dance floor. Your dance partner is obviously impressed.\n\nDapper Gentleman: Hot dawg! You Slay me, doll. I am totally goofy over you. Too bad the bank's closed.\nBut here, I got something else for ya.\n\n[[Accept gift|GetSwing]]\n\n[[Jazz: No thanks, mac|SwingFail]]",
+		"position": {
+			"x": -18,
+			"y": 1654
+		},
+		"colorID": 0
+	},
+	{
+		"title": "SwingFail",
+		"tags": "",
+		"body": "Dapper Gentleman: A shame, really. Well, I have to go see a man about a dog. Be seeing ya.\n\nThere doesn't seem to be anything else for you to do here.\n\n[[Go back to train|TrainHub]]",
+		"position": {
+			"x": -557,
+			"y": 1649
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BebopFail",
+		"tags": "",
+		"body": "Spike: Aw Rhatz! That's a disappointment, if ever there was one. \n\nWell, you have a good evening there, pal.\n\nThe energetic individual walked away.\n\nThere was nothing left for you to do here.\n\n[[Go back to the train station|TrainHub]]",
+		"position": {
+			"x": -34,
+			"y": 1386
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BebopAlmostLoss",
+		"tags": "",
+		"body": "Spike: No rules to keep us in the box. Just a cat, and the Blues. \nSpike: Isn't it great? \n\n[[Jazz: And how!|BebopWin]]\n\n[[Jazz: I am not really feeling it.|BebopFail]]",
+		"position": {
+			"x": -291,
+			"y": 1668
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BebopWin",
+		"tags": "",
+		"body": "Spike: I knew you'd love it! Here I got something for you.\n\nYou received the Spirit of Bebop.\n\nSpike: Put this to good use, cool cat. I'll be seeing you.\n\n[[Go back to the train|TrainHub]]\n<<set $inventory = $inventory+1>>\n<<set $bebop = true>>",
+		"position": {
+			"x": -483,
+			"y": 1938
+		},
+		"colorID": 0
+	},
+	{
+		"title": "GetSwing",
+		"tags": "",
+		"body": "You receive THE SPIRIT OF SWING\n\nDapper Gentleman: Something tells me you got other places you gotta be, doll. \nDapper Gentleman: You take care now, you hear?\n\n[[Go back to the train|TrainHub]]\n<<set $inventory = $inventory+1>>\n<<set $swing = true>>\n\n\n\n",
+		"position": {
+			"x": -190,
+			"y": 1937
+		},
+		"colorID": 0
+	},
+	{
+		"title": "California",
+		"tags": "",
+		"body": "<<set $CA = true>>\nThe cool summer breeze carried music tinged with sea-tang.\n\nIt was little wonder why musicians here preferred boulevards and beaches to orthodox stages. \n\n[[Stay awhile and listen|California1]]\n\n",
+		"position": {
+			"x": 355,
+			"y": 1200
+		},
+		"colorID": 0
+	},
+	{
+		"title": "California1",
+		"tags": "",
+		"body": "The soft notes faded in and out, in sync with the gentle ebb and flow of the Pacific Ocean.\n\nThey spoke to you of lazy Summer Afternoons and evenings spent staring off into the sea\n\nSeeing your interest one of the musicians waved you down.\n\nCool cat: You diggin' our tunes, cat?\n\n[[Jazz: What are you playing?|California2]]\n\n[[Jazz: Not really my jam, man|FailCali]]",
+		"position": {
+			"x": 335,
+			"y": 1458
+		},
+		"colorID": 0
+	},
+	{
+		"title": "FailCali",
+		"tags": "",
+		"body": "Cool Cat: Sorry, but  you just don't got the chill.\n\n[[Go back to the station|TrainHub]]",
+		"position": {
+			"x": 643,
+			"y": 1566
+		},
+		"colorID": 0
+	},
+	{
+		"title": "California2",
+		"tags": "",
+		"body": "Cool cat: Cool Jazz!! It ain't just an East Coast thing. Wanna jam with us?\n\n[[Jazz: Sure!!|California3]]\n\n[[Jazz: I think I'll pass|FailCali]]",
+		"position": {
+			"x": 324,
+			"y": 1701
+		},
+		"colorID": 0
+	},
+	{
+		"title": "California3",
+		"tags": "",
+		"body": "You pick up your instrument and start playing along\n\n[[Play it hot|FailCaliMusic]]\n\n[[Play it smooth|CaliforniaWin]]\n\n[[Play it very hot|FailCaliMusic]]",
+		"position": {
+			"x": 318,
+			"y": 1936
+		},
+		"colorID": 0
+	},
+	{
+		"title": "FailCaliMusic",
+		"tags": "",
+		"body": "Cool Cat: No, no, no! Didn't know you swung like a rusty gate.\n\n[[Continue|FailCali]]",
+		"position": {
+			"x": 659,
+			"y": 1885
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CaliforniaWin",
+		"tags": "",
+		"body": "Cool Cat: You hit on all sixes there! Here have this.\n\nYOU HAVE RECEIVED THE SPIRIT OF COOL JAZZ\n\nCool Cat: You've more than earned this!\n\n[[Go back to the Train Station|TrainHub]]\n<<set $inventory = $inventory+1>>\n<<set $cool = true>>\n",
+		"position": {
+			"x": 530,
+			"y": 2142
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NewOrleans",
+		"tags": "",
+		"body": "<<set $NO = true>>\nGood ol' New Orleans.\n\nFeels like it's been forever.\n\nEverything looks different. But the tunes -\n\nThe tunes are still the same.\n\nNot much left to do but go back home to Storyville.\n\n[[Go home|WalkHome]]",
+		"position": {
+			"x": 827,
+			"y": 950
+		},
+		"colorID": 0
+	},
+	{
+		"title": "WalkHome",
+		"tags": "",
+		"body": "On the road home you see a familiar face.\n\nFamiliar Face: Jazz! Hey Jazz!!\n\n[[Ignore them:|GetHome]]\n\n[[Jazz: Hey!|TalkToFriend]]",
+		"position": {
+			"x": 895,
+			"y": 1198
+		},
+		"colorID": 0
+	},
+	{
+		"title": "GetHome",
+		"tags": "",
+		"body": "You make your way home, you knock on the door.\n\nRagtime: Welcome home, Jazz. You got anything cool for your ol' folks?\n<<if $bebop = true>>\n[[The Spirit of Bebop|SpiritOfBebop]]\n<<endif>>\n<<if $swing = true>>\n[[The Spirit of Swing|SpiritOfSwing]]\n<<endif>>\n<<if $cool = true>>\n[[The Spirit of Cool Jazz|SpiritOfCoolJazz]]\n<<endif>>\n<<if $vanilla = true>>\n[[The Spirit of New Orleans|SpiritOfNewOrleans]]\n<<endif>>\n<<if $inventory = 0>>\n[[I got nothing|GetOut]]\n<<else>>\n[[That's all I got|Judgement]]\n<<endif>>",
+		"position": {
+			"x": 1818,
+			"y": 1254
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TalkToFriend",
+		"tags": "",
+		"body": "Familiar Face: How's the world been treatin' ya, kid? \n\nFamiliar Face: The bull been keepin their mitts off of ya?\n\n[[Jazz: You know it, pal! How's New Orleans been?|TalkToFriend2]]\n\n[[Jazz: The world's what it is. Copacetic one day, down in the dumps the other|TalkToFriend2]]",
+		"position": {
+			"x": 897,
+			"y": 1426
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TalkToFriend2",
+		"tags": "",
+		"body": "Familiar Face: Can't be helped, I suppose.\n\nFamiliar Face: Say, you still remember the ol' New Orleans Jam?\n\n[[Jazz: I do, why?|TalkToFriend3]]",
+		"position": {
+			"x": 885,
+			"y": 1711
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TalkToFriend3",
+		"tags": "",
+		"body": "Familiar Face: Got a minute to play with an old pal?\n\n[[Jazz: I should get home|GetHome]]\n\n[[Jazz: For sure!|TalkToFriend4]]",
+		"position": {
+			"x": 1181,
+			"y": 1711
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TalkToFriend4",
+		"tags": "",
+		"body": "Familiar Face: Alright, let's do this!\n\n[[Play a saxophone|NewOrleansFail]]\n\n[[Play the clarient|NewOrleansWin]]",
+		"position": {
+			"x": 1476,
+			"y": 1723
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NewOrleansFail",
+		"tags": "",
+		"body": "Familiar Face: That's not how we do it in New Orleans! You've changed Jazz.\n\n[[Go home|GetHome]]",
+		"position": {
+			"x": 1487,
+			"y": 1461
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NewOrleansWin",
+		"tags": "",
+		"body": "Familiar Face: That's how you do it! You've changed, but you still remember your roots!\n\nFamiliar Face: Here, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n[[Go home|GetHome]]\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = false>>",
+		"position": {
+			"x": 1473,
+			"y": 1176
+		},
+		"colorID": 0
+	},
+	{
+		"title": "GetOut",
+		"tags": "",
+		"body": "RagTime: Ya got some nerve showing up on my porch with nothing to show but the clothes on your back.\n\nRagTime: Get out, I say, get out!\n\nBAD END",
+		"position": {
+			"x": 1787,
+			"y": 1690
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Judgement",
+		"tags": "",
+		"body": "<<if $satisfaction > 2>>\nRagTime: Haha! You never disappoint Jazz. Welcome home!\n\nGOOD END.\n<<else>>\nRagTime: That's all you got?\n\n[[Jazz: That's all I got.|GetOut]]\n\n<<endif>>",
+		"position": {
+			"x": 2021,
+			"y": 1473
+		},
+		"colorID": 0
+	},
+	{
+		"title": "SpiritOfBebop",
+		"tags": "",
+		"body": "Ahh Bebop! Unrestrained freedom!\n\n<<set $satisfaction = $satisfaction+1>>\n\n[[Jazz: I got more|HomeCheck]]",
+		"position": {
+			"x": 2264,
+			"y": 1213
+		},
+		"colorID": 0
+	},
+	{
+		"title": "SpiritOfSwing",
+		"tags": "",
+		"body": "Swing! Your mother and I will be dancing tonight!\n\n<<set $satisfaction = $satisfaction+1>>\n\n[[Jazz: I got more|HomeCheck]]",
+		"position": {
+			"x": 2496,
+			"y": 1212
+		},
+		"colorID": 0
+	},
+	{
+		"title": "SpiritOfCoolJazz",
+		"tags": "",
+		"body": "I can pracitcally smell the surf! Good job!\n\n<<set $satisfaction = $satisfaction+1>>\n\n[[Jazz: I got more|HomeCheck]]",
+		"position": {
+			"x": 2267,
+			"y": 1454
+		},
+		"colorID": 0
+	},
+	{
+		"title": "SpiritOfNewOrleans",
+		"tags": "",
+		"body": "New Orleans! Good ol' New Orleans! You really got the spirit of our home there jazz\n\n<<set $satisfaction = $satisfaction+1>>\n\n[[Jazz: I got more|HomeCheck]]",
+		"position": {
+			"x": 2499,
+			"y": 1448
+		},
+		"colorID": 0
+	},
+	{
+		"title": "HomeCheck",
+		"tags": "",
+		"body": "Ragtime: More gifts for your daddy-O?\n<<if $bebop = true>>\n[[The Spirit of Bebop|SpiritOfBebop]]\n<<endif>>\n<<if $swing = true>>\n[[The Spirit of Swing|SpiritOfSwing]]\n<<endif>>\n<<if $cool = true>>\n[[The Spirit of Cool Jazz|SpiritOfCoolJazz]]\n<<endif>>\n<<if $vanilla = true>>\n[[The Spirit of New Orleans|SpiritOfNewOrleans]]\n<<endif>>\n<<if $inventory = 0>>\n[[I got nothing|GetOut]]\n<<else>>\n[[That's all I got|Judgement]]\n<<endif>>",
+		"position": {
+			"x": 2235,
+			"y": 1720
+		},
+		"colorID": 0
+	}
+]
