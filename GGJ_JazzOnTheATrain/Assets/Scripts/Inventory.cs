@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    bool[] ingredients;
     public GameObject[] ingredientUI;
     public GameObject InventoryWindow;
     public Text ButtonText;
@@ -19,74 +18,50 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ingredients = new bool[ingredientUI.Length];
-       // ResetList();
+        // ResetList();
+        print("Loading inventory");
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool shouldButtonBeActive = true;
         if (InventoryActive)
         {
             ButtonText.text = "Close";
             for (int i = 0; i < ingredientUI.Length; i++)
             {
-                ingredientUI[i].SetActive(ingredients[i]);
+                ingredientUI[i].SetActive(GameState.get().ingredients[i]);
             }
         }
         else
         {
             ButtonText.text = "Inventory";
+            if (PlayerProximityActivated.IsIntrusiveGuiOverlayVisible())
+            {
+                shouldButtonBeActive = false;
+            }
         }
 
-        if (IsIntrusiveGuiOverlayVisible())
-        {
-            button.SetActive(false);
-            InventoryWindow.SetActive(false);
-        }
-        else
-        {
-            button.SetActive(true);
-            InventoryWindow.SetActive(InventoryActive);
-        }
-
-        /*if (Input.GetKeyDown(KeyCode.A))
+        button.SetActive(shouldButtonBeActive);
+        InventoryWindow.SetActive(InventoryActive);
+        if (Input.GetKeyDown(KeyCode.I))
         {
             GetItem("CoolJazz");
             GetItem("Bebop");
-        }*/
-
+        }
     }
 
     private void ResetList()
     {
-        for (int i = 0; i < ingredients.Length; i++)
-        {
-            ingredients[i] = false;
-        }
+        GameState.get().trackEvent(new GameEvent("Discard Inventory"));
     }
 
     [YarnCommand("Get")]
     public void GetItem(string item)
     {
-        int index = 0;
-        switch (item)
-        {
-            case "CoolJazz":
-                index = 0;
-                break;
-            case "Bebop":
-                index = 1;
-                break;
-            case "Swing":
-                index = 2;
-                break;
-            case "NewOrleans":
-                index = 3;
-                break;
-        }
-
-        ingredients[index] = true;
+        print("Item Received:" + item);
+        GameState.get().trackEvent(new GameEvent("Item Received", item));
     }
 
     public void ToggleInventory()
@@ -99,25 +74,5 @@ public class Inventory : MonoBehaviour
         {
             InventoryActive = true;
         }
-    }
-
-    bool IsIntrusiveGuiOverlayVisible()
-    {
-
-        DialogueRunner dialogRunner = FindObjectOfType<DialogueRunner>();
-        if (dialogRunner != null && dialogRunner.isDialogueRunning == true)
-        {
-            return true;
-        }
-
-        IntrusiveGuiOverlay[] intrusiveOverlays = FindObjectsOfType<IntrusiveGuiOverlay>();
-        foreach (IntrusiveGuiOverlay intrusiveGuiOverlay in intrusiveOverlays)
-        {
-            if (intrusiveGuiOverlay.isActiveAndEnabled)
-            {
-                return true;
-            }
-        }
-        return false;
     }
 }
