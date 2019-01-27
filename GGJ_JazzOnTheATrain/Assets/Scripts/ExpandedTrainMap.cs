@@ -29,36 +29,44 @@ public class ExpandedTrainMap : IntrusiveGuiOverlay
                 break;
         }
 
-        this.SelectLocationFromMap(buttonText.text);
+        this.SelectLocationFromMap(locationSceneName);
+    }
+
+    private Door GetTrainDoor()
+    {
+        if (trainDoor == null)
+        {
+            Door[] doors = FindObjectsOfType<Door>();
+            foreach (Door door in doors)
+            {
+                if (!door.ToSceneName.Contains("Train"))
+                {
+                    trainDoor = door;
+                }
+            }
+        }
+
+        return trainDoor;
     }
 
     // Use this for initialization
     void Start()
     {
         this.gameObject.SetActive(false);
-        Door[] doors = FindObjectsOfType<Door>();
-        foreach (Door door in doors)
-        {
-            if (!door.ToSceneName.Contains("Train"))
-            {
-                trainDoor = door;
-            }
-        }
 
-       Button[] cityButtons =  this.GetComponentsInChildren<Button>();
-       foreach (Button cityButton in cityButtons)
-       {
-           cityButton.onClick.RemoveAllListeners();
-           cityButton.onClick.AddListener(delegate()
-           {
-               onClick(cityButton);
-           });
-       }
+
+        Button[] cityButtons = this.GetComponentsInChildren<Button>();
+        foreach (Button cityButton in cityButtons)
+        {
+            cityButton.onClick.RemoveAllListeners();
+            cityButton.onClick.AddListener(delegate() { onClick(cityButton); });
+        }
     }
 
 
     public void SelectLocationFromMap(string locationStartingSceneName)
     {
-        trainDoor.ToSceneName = locationStartingSceneName;
+        GetTrainDoor().ToSceneName = locationStartingSceneName;
+        this.gameObject.SetActive(false);
     }
 }
