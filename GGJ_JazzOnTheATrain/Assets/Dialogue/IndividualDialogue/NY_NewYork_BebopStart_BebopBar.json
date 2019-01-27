@@ -42,7 +42,7 @@
 	{
 		"title": "BebopStart2",
 		"tags": "",
-		"body": "<<Switch Manager NewYork2>>\n\nComplex harmonies. Complex chord progressions. Improvisatory and spontaneous.\n\nSpike: You like it, cool cat? This is Bebop!!\n\n[[Jazz: I love it!|BebopWin]]\n\n[[Jazz: I can't dance to this|BebopAlmostLoss]]",
+		"body": "<<Switch SceneEssentials NewYork2>>\n\nSpike: You like it, cool cat? This is Bebop!!\n\n[[Jazz: I love it!|BebopWin]]\n\n[[Jazz: I can't dance to this|BebopAlmostLoss]]",
 		"position": {
 			"x": 267,
 			"y": 1652
