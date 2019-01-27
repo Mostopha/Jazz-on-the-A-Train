@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &84250656 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6209223631558044351, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &97596989
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +470,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Las Angeles
+  m_Text: Los Angeles
 --- !u!222 &291410428
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -485,18 +479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291410425}
   m_CullTransparentMesh: 0
---- !u!114 &401260283 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6209223631308145764, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &483402866
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,18 +785,6 @@ MonoBehaviour:
   minPosition: 1.36
   maxPosition: 13.72
   moveSpeed: 2
---- !u!114 &584944562 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6209223631090905389, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &627131073
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,15 +834,15 @@ MonoBehaviour:
   fading: 0
   endDate: 0
   display: {fileID: 0}
-  dialogueContainer: {fileID: 84250656}
-  lineText: {fileID: 584944562}
+  dialogueContainer: {fileID: 0}
+  lineText: {fileID: 0}
   continuePrompt: {fileID: 0}
   textSpeed: 0.025
   optionButtons:
-  - {fileID: 1436701895}
-  - {fileID: 1269959689}
-  - {fileID: 2063394888}
-  - {fileID: 401260283}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   gameControlsContainer: {fileID: 0}
 --- !u!114 &627131076
 MonoBehaviour:
@@ -1364,30 +1334,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203716917}
   m_CullTransparentMesh: 0
---- !u!114 &1269959689 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6209223632586929814, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1436701895 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6209223632353078872, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1550013668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,18 +1921,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2063394888 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6209223631759938263, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2099044536
 GameObject:
   m_ObjectHideFlags: 0

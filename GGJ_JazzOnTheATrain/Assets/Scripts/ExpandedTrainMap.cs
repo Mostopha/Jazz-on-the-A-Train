@@ -21,7 +21,7 @@ public class ExpandedTrainMap : IntrusiveGuiOverlay
             case "New York":
                 locationSceneName = "NewYork1";
                 break;
-            case "California":
+            case "Los Angeles":
                 locationSceneName = "California1";
                 break;
             default:

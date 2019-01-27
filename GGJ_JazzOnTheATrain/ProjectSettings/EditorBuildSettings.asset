@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 9b3c8ac3d81a45343bcce8a87bc4bb33
   - enabled: 1
-    path: Assets/Scenes/California 1.unity
+    path: Assets/Scenes/California1.unity
     guid: 9f7870f3c01804ea4a33f4e4237d9293
   - enabled: 1
     path: Assets/Scenes/NewYork1.unity
