@@ -338,6 +338,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AnimationTest.cs" t="Include" />
           <e p="CollapsedTrainMap.cs" t="Include" />
           <e p="CrossSceneBehavior.cs" t="Include" />
           <e p="Door.cs" t="Include" />
