@@ -12,6 +12,9 @@ public class Inventory : MonoBehaviour
     public Text ButtonText;
     bool InventoryActive;
 
+    public static bool NYVisited;
+    public static bool CAVisited;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,10 +40,11 @@ public class Inventory : MonoBehaviour
             ButtonText.text = "Inventory";
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        /*if (Input.GetKeyDown(KeyCode.A))
         {
             GetItem("CoolJazz");
-        }
+            GetItem("Bebop");
+        }*/
 
     }
 

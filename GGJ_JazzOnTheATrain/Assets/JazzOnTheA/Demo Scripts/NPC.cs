@@ -29,33 +29,47 @@ using System.Collections;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.Serialization;
 
-namespace Yarn.Unity.Example {
-	public class NPC : MonoBehaviour {
-		
-		public string characterName = "";
+namespace Yarn.Unity.Example
+{
+    public class NPC : PlayerProximityActivated
+    {
+        public string characterName = "";
 
-		[FormerlySerializedAs("startNode")]
-		public string talkToNode = "";
+        [FormerlySerializedAs("startNode")] public string talkToNode = "";
 
-		[Header("Optional")]
-		public TextAsset scriptToLoad;
+        [Header("Optional")] public TextAsset scriptToLoad;
 
-		
-		// Use this for initialization
-		void Start () {
-			if (scriptToLoad != null) {
-				FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
-			}
-			
-		}
-		
-		// Update is called once per frame
-		void Update () {
-            if (Input.anyKeyDown)
+
+        // Use this for initialization
+        public override void OnActivate()
+        {
+            if (string.IsNullOrEmpty(talkToNode))
             {
+                Debug.Log(characterName + " has nothing to say.");
+            } else
+            {
+                Debug.Log("Beginning conversation with " + characterName + " at node " + talkToNode);
+                // Kick off the dialogue at this node.
+                FindObjectOfType<DialogueRunner>().StartDialogue(talkToNode);
 
+                Yarn.Value v = new Yarn.Value(true);
+                FindObjectOfType<ExampleVariableStorage>().SetValue("$happy", v);
+                Yarn.Value b = FindObjectOfType<ExampleVariableStorage>().GetValue("$happy");
+                Debug.Log(b.type);
+                if (b.type == Yarn.Value.Type.Bool)
+                {
+                    bool boolean = b.AsBool;
+                    Debug.Log(boolean);
+                }
             }
-		}
-	}
+        }
 
+        void Start()
+        {
+            if (scriptToLoad != null)
+            {
+                FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
+            }
+        }
+    }
 }
