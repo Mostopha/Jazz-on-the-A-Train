@@ -37,10 +37,11 @@ public class Inventory : MonoBehaviour
             ButtonText.text = "Inventory";
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        /*if (Input.GetKeyDown(KeyCode.A))
         {
             GetItem("CoolJazz");
-        }
+            GetItem("Bebop");
+        }*/
 
     }
 
