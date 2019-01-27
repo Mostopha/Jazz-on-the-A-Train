@@ -16,6 +16,10 @@ namespace Yarn.Unity.Example
 
         public float movementFromButtons { get; set; }
 
+        public Animator anim;
+        public Transform t;
+        float OGscale;
+
         // Draw the range at which we'll start talking to people.
         void OnDrawGizmosSelected()
         {
@@ -31,6 +35,9 @@ namespace Yarn.Unity.Example
         void Start()
         {
             MakeDoorsReachable();
+            anim = GameObject.Find("Jazz").GetComponent<Animator>();
+            t = GameObject.Find("Jazz").transform;
+            OGscale = t.localScale.x;
         }
 
         private void MakeDoorsReachable()
@@ -53,7 +60,7 @@ namespace Yarn.Unity.Example
 
         // Update is called once per frame
         void Update()
-        {
+        { 
             // Remove all player control when we're in dialogue, map, etc.
             if (PlayerProximityActivated.IsIntrusiveGuiOverlayVisible())
             {
@@ -63,6 +70,7 @@ namespace Yarn.Unity.Example
             // Move the player, clamping them to within the boundaries 
             // of the level.
             var movement = Input.GetAxis("Horizontal");
+            anim.SetBool("Walking", movement != 0);
             movement += movementFromButtons;
             movement *= (moveSpeed * Time.deltaTime);
 
@@ -72,6 +80,17 @@ namespace Yarn.Unity.Example
             newPosition.x = Mathf.Clamp(newPosition.x, minPosition, maxPosition);
 
             transform.position = newPosition;
+
+            if (movement < 0)
+            {
+                Vector3 mod = new Vector3(OGscale * -1, t.localScale.y, t.localScale.z);
+                t.localScale = mod;
+            }
+            if (movement > 0)
+            {
+                Vector3 mod = new Vector3(OGscale, t.localScale.y, t.localScale.z);
+                t.localScale = mod;
+            }
         }
 
 
