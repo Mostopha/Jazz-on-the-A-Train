@@ -65,7 +65,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 27852
---- !u!114 &114050259432699162
+--- !u!114 &114016905466862900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Path: event:/Bebop2
@@ -100,80 +100,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/ATrain/NOLAATrain
-  guid: fb5a0cf5ea56c948b57c4eac856aa5ed
+  Path: event:/Bebop2
+  guid: c13ef785c9ac2e4ab3a3650d9c94e5c8
   Banks:
-  - {fileID: 114310228057929520}
+  - {fileID: 114082957717187482}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 301975
---- !u!114 &114059638793304220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/DESSERT-2
-  guid: 2b6ac50446aa5e449a9588a1afa9b045
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 321322
---- !u!114 &114062220036201856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/BebopATrain
-  guid: 613762e5472c3640ae5f9af1c3f0a62a
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 260000
---- !u!114 &114066084632651648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: NOLA4
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &114128891924560898
+  Length: 21566
+--- !u!114 &114082957717187482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,38 +123,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: D:\GitKrakenClones\JazzOnTheATrain\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheTrain\Build\Desktop\Master
+  Path: D:\UNITY\Projects\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheATrain\Build\Desktop\Master
     Bank.bank
-  lastModified: 636841231681658765
+  lastModified: 636841975096675413
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4332000
+    Value: 33213472
   Exists: 1
---- !u!114 &114142873350357602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/ATrain/WCATrain
-  guid: 62806f2a5eabc04e9e96c4c50b684cb6
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 310401
---- !u!114 &114150373952533530
+--- !u!114 &114117114056284918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,22 +190,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 22109
---- !u!114 &114163659994783906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Ingredients_3
-  Min: 0
-  Max: 4
-  Default: 0
 --- !u!114 &114187076911293092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,30 +213,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 310401
---- !u!114 &114190719207375004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Dessert/DESSERT-1
-  guid: 1e439ecb0026d942911af37444df6e30
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 114881794086913958}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 89109
 --- !u!114 &114200437902862902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,30 +260,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 89109
---- !u!114 &114239602281032150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Dessert2222
-  guid: f10da20b28b8c84c9d9e34636991ff87
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 83400
---- !u!114 &114240978752918692
+--- !u!114 &114217881566027086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -420,65 +272,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Parameter 1
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114244647986223152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Bebop2
+  Name: Swing1
   Min: 0
   Max: 1
   Default: 0
---- !u!114 &114249252059241068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Ingredients_3
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114250774532993318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Train
-  guid: 6dff88fa1ab928499754b72c74509aa0
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 332120
 --- !u!114 &114269338643272932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,46 +322,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 17910
---- !u!114 &114310228057929520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\UNITY\Projects\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheATrain\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636841922110377076
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 33213600
-  Exists: 1
---- !u!114 &114322233841767896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\GitKrakenClones\JazzOnTheATrain\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheTrain\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636841231681658765
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 4332000
-  Exists: 0
 --- !u!114 &114323997843167434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,29 +364,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1468
   Exists: 1
---- !u!114 &114334883492889128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Swing1
-  guid: 3d1359abfe7b854689533230619a70b3
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 27852
 --- !u!114 &114337545935640246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,103 +391,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 879213
---- !u!114 &114368524022655604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/DESSERT-General
-  guid: 377e748f8311544fb98178506f4a5cb7
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &114372232283149226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/DESSERT-1
-  guid: 1e439ecb0026d942911af37444df6e30
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 114422518498550536}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 89109
---- !u!114 &114378911578433706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Bebop1
-  guid: d878846d74361c499aa30ee2ad292675
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 17910
---- !u!114 &114380969055009652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Dessert/DESSERT-General
-  guid: 377e748f8311544fb98178506f4a5cb7
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 114949841110042118}
-  - {fileID: 114896417703519466}
-  - {fileID: 114150373952533530}
-  - {fileID: 114244647986223152}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 879213
 --- !u!114 &114383235191644646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,7 +414,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 321322
---- !u!114 &114387911004355688
+--- !u!114 &114412955204047818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -926,7 +563,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 23963
---- !u!114 &114452884675935426
+--- !u!114 &114457561457474444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1030,108 +667,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
---- !u!114 &114529825729556234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/ATrain/BebopATrain
-  guid: 613762e5472c3640ae5f9af1c3f0a62a
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 260000
---- !u!114 &114532316204595886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Swing1
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &114540828526645494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Ingredient_1
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114541655295485598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Bebop2
-  guid: c13ef785c9ac2e4ab3a3650d9c94e5c8
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 21566
---- !u!114 &114544616932749836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/NOLA2
-  guid: 4f2efd6820431f4d932ae31e9f4b105d
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 22109
---- !u!114 &114545960554045740
+--- !u!114 &114489536296343552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1146,7 +682,7 @@ MonoBehaviour:
   Path: event:/NOLA1
   guid: c2a40f33104a5c49a56947a1abf6ede8
   Banks:
-  - {fileID: 114310228057929520}
+  - {fileID: 114082957717187482}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1154,92 +690,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 28375
---- !u!114 &114570570095993852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/DESSERT2222
-  guid: f10da20b28b8c84c9d9e34636991ff87
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 83400
---- !u!114 &114584007649510268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Ingredients_3
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114618450163548656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/WC2
-  guid: 4c2c2be3945468418c3ac447c70a4ed4
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 23822
---- !u!114 &114627660851212098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/DESSERT-3
-  guid: 0f8ef5483575e541a00196cc3d6f4e5b
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 114163659994783906}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 298875
 --- !u!114 &114627846046963720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,125 +713,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 172721
---- !u!114 &114630167702977218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Parameter 1
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114633178652472418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Fmod\JazzOnTheTrain\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636841231681150128
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 716
-  Exists: 1
---- !u!114 &114642314000716124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Ingredient_1
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114649708747385848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/DESSERT3
-  guid: 8f1d06974ea2e74f95bf8745d4210799
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 114979602328357620}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 83759
---- !u!114 &114694667930399648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Dessert/DESSERT-3
-  guid: 0f8ef5483575e541a00196cc3d6f4e5b
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 114514302556118354}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 298875
---- !u!114 &114704782453934114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\ocelo\Documents\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheTrain\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636841231453380403
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 4332000
-  Exists: 1
 --- !u!114 &114723092131510096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1454,40 +785,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\ocelo\Documents\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheTrain\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636841231453380403
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 4332000
-  Exists: 0
---- !u!114 &114774494264452148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Dessert/DESSERT-4
-  guid: 93170483d3081a43bdaaaac35683be51
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 88375
+  Name: WC3
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114781911445850476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,22 +909,6 @@ MonoBehaviour:
   Name: Ingredient_1
   Min: 0
   Max: 4
-  Default: 0
---- !u!114 &114896417703519466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Swing1
-  Min: 0
-  Max: 1
   Default: 0
 --- !u!114 &114911172602769696
 MonoBehaviour:
@@ -1877,26 +1165,3 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 18405
---- !u!114 &114988155887628014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/WC1
-  guid: f09cb5a36c11aa45b886048edcbee6f2
-  Banks:
-  - {fileID: 114310228057929520}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 23963
