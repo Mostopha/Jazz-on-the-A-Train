@@ -92,7 +92,7 @@
 	{
 		"title": "BebopWin",
 		"tags": "",
-		"body": "Spike: I knew you'd love it! Here I got something for you.\n\nYou received the Spirit of Bebop.\n\nSpike: Put this to good use, cool cat. I'll be seeing you.\n\n<<set $inventory = $inventory+1>>\n<<set $bebop = true>>",
+		"body": "Spike: I knew you'd love it! Here I got something for you.\n\nYou received the Spirit of Bebop.\n\nSpike: Put this to good use, cool cat. I'll be seeing you.\n\n<<set $inventory = $inventory+1>>\n<<set $bebop = true>>\n<<Get Manager Bebop>>",
 		"position": {
 			"x": -483,
 			"y": 1938
@@ -102,7 +102,7 @@
 	{
 		"title": "GetSwing",
 		"tags": "",
-		"body": "You receive THE SPIRIT OF SWING\n\nDapper Gentleman: Something tells me you got other places you gotta be, doll. \nDapper Gentleman: You take care now, you hear?\n\n\n<<set $inventory = $inventory+1>>\n<<set $swing = true>>\n\n\n\n",
+		"body": "You receive THE SPIRIT OF SWING\n\nDapper Gentleman: Something tells me you got other places you gotta be, doll. \nDapper Gentleman: You take care now, you hear?\n\n\n<<set $inventory = $inventory+1>>\n<<set $swing = true>>\n<<Get Manager Swing>>\n\n\n",
 		"position": {
 			"x": -221,
 			"y": 1937

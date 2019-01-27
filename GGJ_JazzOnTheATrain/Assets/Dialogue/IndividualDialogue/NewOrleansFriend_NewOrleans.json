@@ -71,7 +71,7 @@
 	}
 ]		"title": "NewOrleansWin",
 		"tags": "",
-		"body": "Familiar Face: That's how you do it! You've changed, but you still remember your roots!\n\nFamiliar Face: Here, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = false>>",
+		"body": "Familiar Face: That's how you do it! You've changed, but you still remember your roots!\n\nFamiliar Face: Here, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = false>>\n<<Get Manager NewOrleans>>\n\n\n",
 		"position": {
 			"x": 1209,
 			"y": 1177
