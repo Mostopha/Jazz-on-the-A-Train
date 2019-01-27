@@ -7,6 +7,6 @@ public class CollapsedTrainMap : PlayerProximityActivated
     // Use this for initialization
     public override void OnActivate()
     {
-        throw new System.NotImplementedException();
+        ExpandedTrainMap.gameObject.SetActive(true);
     }
 }
