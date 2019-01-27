@@ -1219,8 +1219,8 @@ MonoBehaviour:
   sourceText:
   - {fileID: 4900000, guid: 6c4e9acb103274949ae415f4e8c2a362, type: 3}
   - {fileID: 4900000, guid: 3b228e13166124cce95c83ad7e734183, type: 3}
-  variableStorage: {fileID: 0}
-  dialogueUI: {fileID: 0}
+  variableStorage: {fileID: 627131074}
+  dialogueUI: {fileID: 627131075}
   startNode: 
   startAutomatically: 0
   automaticCommands: 1
@@ -2467,7 +2467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926079639}
   - component: {fileID: 1926079638}
-  - component: {fileID: 1926079641}
+  - component: {fileID: 1926079640}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -2538,7 +2538,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1926079641
+--- !u!114 &1926079640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2547,12 +2547,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1926079637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
+  m_Script: {fileID: 11500000, guid: 53f521f79fbf0a343a3a0c9869b3d047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Ship
-  talkToNode: Ship
-  scriptToLoad: {fileID: 0}
+  ToSceneName: Room 3
 --- !u!1 &2027769761
 GameObject:
   m_ObjectHideFlags: 0

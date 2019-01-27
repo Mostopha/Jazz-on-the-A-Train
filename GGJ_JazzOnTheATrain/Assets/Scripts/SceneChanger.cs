@@ -11,17 +11,44 @@ public class SceneChanger : MonoBehaviour
     public static SceneChanger sceneChanger;
 
 
-    public SceneChanger()
-    {
-        if (sceneChanger == null)
-        {
-            sceneChanger = this;
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
+        print("current scene is now " + SceneManager.GetActiveScene().name);
+        sceneChanger = this;
+        print("Previous scene was: " + GameState.get().previousSceneName);
+        MovePlayerToDoorTheyCameFrom();
+    }
+
+    private void MovePlayerToDoorTheyCameFrom()
+    {
+        PlayerCharacter player = FindObjectOfType<PlayerCharacter>();
+        Door doorBack = FindDoorToScene(GameState.get().previousSceneName);
+        if (doorBack != null)
+        {
+            print("positioning at door");
+            print(doorBack.gameObject);
+            print(player);
+            player.moveTo(doorBack.gameObject.transform.position.x);
+        }
+        else
+        {
+            print("no door to go back to");
+        }
+    }
+
+    private Door FindDoorToScene(string previousSceneName)
+    {
+        Door[] doors = Object.FindObjectsOfType<Door>();
+        foreach (Door door in doors)
+        {
+            if (door.ToSceneName.Equals(previousSceneName))
+            {
+                return door;
+            }
+        }
+
+        return null;
     }
 
     // Update is called once per frame
@@ -51,10 +78,26 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+    private void SelectLocationFromMap(string locationStartingSceneName)
+    {
+        Door trainDoor = null;
+        Door[] doors = Object.FindObjectsOfType<Door>();
+        foreach (Door door in doors)
+        {
+            if (!door.ToSceneName.Contains("Train"))
+            {
+                trainDoor = door;
+            }
+        }
+
+        trainDoor.ToSceneName = locationStartingSceneName;
+    }
+
     private void EnterDoor(Door door)
     {
-        //        SceneManager.MoveGameObjectToScene();
         print("switching to scene" + door.ToSceneName);
+
+        GameState.get().trackEvent(new GameEvent("Exit Scene", SceneManager.GetActiveScene().name));
         SceneManager.LoadScene(door.ToSceneName);
     }
 
@@ -64,11 +107,8 @@ public class SceneChanger : MonoBehaviour
         return Math.Abs(door.transform.position.x - playerX) < 1.5;
     }
 
-    private bool IsExitingSceneRight(float position, float movement)
+    public static SceneChanger getSceneChanger()
     {
-//        Object.FindObjectOfType(typeof(Door));
-//        SceneManager.GetActiveScene().
-//        return position 
-        return false;
+        return sceneChanger;
     }
 }
