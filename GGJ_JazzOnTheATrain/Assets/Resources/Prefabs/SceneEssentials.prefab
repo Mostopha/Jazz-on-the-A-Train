@@ -906,6 +906,7 @@ MonoBehaviour:
   - {fileID: 6209223632715241380}
   InventoryWindow: {fileID: 6209223631801620672}
   ButtonText: {fileID: 6209223632191605795}
+  button: {fileID: 6209223631400944017}
 --- !u!114 &1267464899
 MonoBehaviour:
   m_ObjectHideFlags: 0
