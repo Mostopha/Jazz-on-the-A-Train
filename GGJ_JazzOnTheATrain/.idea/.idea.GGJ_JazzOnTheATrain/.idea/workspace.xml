@@ -19,13 +19,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="12" />
+          <entry key="cs" value="13" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="12" />
+          <entry key="C#" value="13" />
           <entry key="JSON" value="2" />
         </counts>
       </usages-collector>
@@ -45,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="784">
+              <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
               <folding>
                 <marker date="1548604378138" expanded="true" signature="6:118" ph="..." />
                 <marker date="1548604378138" expanded="true" signature="158:2774" ph="{...}" />
@@ -78,15 +78,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShootingStars.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Door.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="128">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <marker date="1548575576574" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548575576574" expanded="true" signature="122:476" ph="{...}" />
-                <marker date="1548575576574" expanded="true" signature="230:295" ph="{...}" />
-                <marker date="1548575576574" expanded="true" signature="353:469" ph="{...}" />
+                <marker date="1548570802763" expanded="false" signature="6:116" ph="..." />
+                <marker date="1548570802763" expanded="true" signature="162:319" ph="{...}" />
+                <marker date="1548570802763" expanded="true" signature="243:317" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -97,16 +96,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <marker date="1548573651228" expanded="false" signature="6:141" ph="..." />
-                <marker date="1548573651228" expanded="true" signature="265:911" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="416:849" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="944:1288" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="981:1255" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="1086:1245" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="1157:1231" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="1341:1673" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="1513:1667" ph="{...}" />
-                <marker date="1548573651228" expanded="true" signature="1747:1865" ph="{...}" />
+                <marker date="1548611052267" expanded="false" signature="6:141" ph="..." />
+                <marker date="1548611052267" expanded="true" signature="265:906" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="416:844" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="939:1283" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="976:1250" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="1081:1240" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="1152:1226" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="1336:1668" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="1508:1662" ph="{...}" />
+                <marker date="1548611052267" expanded="true" signature="1742:1860" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -134,8 +133,8 @@
             <state relative-caret-position="416">
               <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding>
-                <marker date="1548570802763" expanded="true" signature="0:1125" ph="/* The MIT License (MIT) ... */" />
-                <marker date="1548570802763" expanded="true" signature="1133:1247" ph="..." />
+                <marker date="1548611052261" expanded="true" signature="0:1125" ph="/* The MIT License (MIT) ... */" />
+                <marker date="1548611052261" expanded="true" signature="1133:1247" ph="..." />
               </folding>
             </state>
           </provider>
@@ -214,7 +213,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/JazzOnTheA/Demo Scripts/ExampleDialogueUI.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -269,6 +268,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollapsedTrainMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JazzOnTheA/Demo Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JazzOnTheA/Demo Scripts/PlayerCharacter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -300,8 +300,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
+    <option name="x" value="399" />
+    <option name="y" value="207" />
     <option name="width" value="1932" />
     <option name="height" value="1045" />
   </component>
@@ -380,7 +380,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
+    <frame x="399" y="207" width="1932" height="1045" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25267094" />
@@ -468,16 +468,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548573651228" expanded="false" signature="6:141" ph="..." />
-            <marker date="1548573651228" expanded="true" signature="265:911" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="416:849" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="944:1288" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="981:1255" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="1086:1245" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="1157:1231" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="1341:1673" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="1513:1667" ph="{...}" />
-            <marker date="1548573651228" expanded="true" signature="1747:1865" ph="{...}" />
+            <marker date="1548611052267" expanded="false" signature="6:141" ph="..." />
+            <marker date="1548611052267" expanded="true" signature="265:906" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="416:844" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="939:1283" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="976:1250" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="1081:1240" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="1152:1226" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="1336:1668" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="1508:1662" ph="{...}" />
+            <marker date="1548611052267" expanded="true" signature="1742:1860" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -487,8 +487,8 @@
         <state relative-caret-position="416">
           <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
-            <marker date="1548570802763" expanded="true" signature="0:1125" ph="/* The MIT License (MIT) ... */" />
-            <marker date="1548570802763" expanded="true" signature="1133:1247" ph="..." />
+            <marker date="1548611052261" expanded="true" signature="0:1125" ph="/* The MIT License (MIT) ... */" />
+            <marker date="1548611052261" expanded="true" signature="1133:1247" ph="..." />
           </folding>
         </state>
       </provider>
@@ -501,51 +501,6 @@
             <marker date="1548570802812" expanded="true" signature="1133:1205" ph="..." />
             <marker date="1548570802812" expanded="true" signature="1286:4857" ph="{...}" />
             <marker date="1548570802812" expanded="true" signature="4696:4851" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/JazzOnTheA/Demo Scripts/ExampleDialogueUI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding>
-            <marker date="1548535836095" expanded="true" signature="0:1125" ph="/* The MIT License (MIT) ... */" />
-            <marker date="1548535836095" expanded="false" signature="1133:1299" ph="..." />
-            <marker date="1548535836095" expanded="true" signature="1301:1623" ph="/* Displays dialogue lines to the player, and sends ... */" />
-            <marker date="1548535836095" expanded="true" signature="1654:9234" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="1719:9231" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="1860:1978" ph="/* public PreConcert preConcert; ... */" />
-            <marker date="1548535836095" expanded="true" signature="2042:2083" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="2151:2256" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="2327:2844" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="2392:2840" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="2848:2996" ph="/* The object that contains the dialogue and the options. ... */" />
-            <marker date="1548535836095" expanded="true" signature="3214:3351" ph="/* A delegate (ie a function-stored-in-a-variable) that ... */" />
-            <marker date="1548535836095" expanded="true" signature="3663:4258" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="3920:3967" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="4088:4235" ph="/* GlobalManager gm = FindObjectOfType(typeof(GlobalManager)) as GlobalManager; ... */" />
-            <marker date="1548535836095" expanded="true" signature="4280:4340" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="4438:5489" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="4531:4949" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="4670:4944" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="4778:4888" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="5145:5192" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="5261:5290" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="5717:6690" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="5825:5984" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="6121:6337" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="6536:6565" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="6639:6686" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="6782:7027" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="6794:6879" ph="/* Call the delegate to tell the dialogue system that we've ... */" />
-            <marker date="1548535836095" expanded="true" signature="7124:7220" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="7272:7581" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="7496:7557" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="7709:9225" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="7745:7859" ph="/* GlobalManager gm = FindObjectOfType (typeof(GlobalManager)) as GlobalManager; ... */" />
-            <marker date="1548535836095" expanded="true" signature="8003:8067" ph="{...}" />
-            <marker date="1548535836095" expanded="true" signature="8076:9204" ph="/* if (layersDeep == 1) ... */" />
           </folding>
         </state>
       </provider>
@@ -619,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="784">
+          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
           <folding>
             <marker date="1548604378138" expanded="true" signature="6:118" ph="..." />
             <marker date="1548604378138" expanded="true" signature="158:2774" ph="{...}" />
@@ -643,6 +598,63 @@
             <marker date="1548604378138" expanded="true" signature="2394:2439" ph="{...}" />
             <marker date="1548604378138" expanded="true" signature="2611:2744" ph="{...}" />
             <marker date="1548604378138" expanded="true" signature="2677:2734" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Door.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1548570802763" expanded="false" signature="6:116" ph="..." />
+            <marker date="1548570802763" expanded="true" signature="162:319" ph="{...}" />
+            <marker date="1548570802763" expanded="true" signature="243:317" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/JazzOnTheA/Demo Scripts/ExampleDialogueUI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+          <folding>
+            <marker date="1548535836095" expanded="true" signature="0:1125" ph="/* The MIT License (MIT) ... */" />
+            <marker date="1548535836095" expanded="false" signature="1133:1299" ph="..." />
+            <marker date="1548535836095" expanded="true" signature="1301:1623" ph="/* Displays dialogue lines to the player, and sends ... */" />
+            <marker date="1548535836095" expanded="true" signature="1654:9234" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="1719:9231" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="1860:1978" ph="/* public PreConcert preConcert; ... */" />
+            <marker date="1548535836095" expanded="true" signature="2042:2083" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="2151:2256" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="2327:2844" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="2392:2840" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="2848:2996" ph="/* The object that contains the dialogue and the options. ... */" />
+            <marker date="1548535836095" expanded="true" signature="3214:3351" ph="/* A delegate (ie a function-stored-in-a-variable) that ... */" />
+            <marker date="1548535836095" expanded="true" signature="3663:4258" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="3920:3967" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="4088:4235" ph="/* GlobalManager gm = FindObjectOfType(typeof(GlobalManager)) as GlobalManager; ... */" />
+            <marker date="1548535836095" expanded="true" signature="4280:4340" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="4438:5489" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="4531:4949" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="4670:4944" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="4778:4888" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="5145:5192" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="5261:5290" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="5717:6690" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="5825:5984" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="6121:6337" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="6536:6565" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="6639:6686" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="6782:7027" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="6794:6879" ph="/* Call the delegate to tell the dialogue system that we've ... */" />
+            <marker date="1548535836095" expanded="true" signature="7124:7220" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="7272:7581" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="7496:7557" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="7709:9225" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="7745:7859" ph="/* GlobalManager gm = FindObjectOfType (typeof(GlobalManager)) as GlobalManager; ... */" />
+            <marker date="1548535836095" expanded="true" signature="8003:8067" ph="{...}" />
+            <marker date="1548535836095" expanded="true" signature="8076:9204" ph="/* if (layersDeep == 1) ... */" />
           </folding>
         </state>
       </provider>

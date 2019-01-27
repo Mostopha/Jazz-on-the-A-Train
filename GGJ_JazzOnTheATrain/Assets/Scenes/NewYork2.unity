@@ -118,12 +118,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6209223631608740511}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &323044764 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6209223631386361603, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &401260283 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6209223631308145764, guid: a506e3fc805847c48b93eb989639217f,
@@ -690,7 +684,7 @@ MonoBehaviour:
   - {fileID: 1269959689}
   - {fileID: 2063394888}
   - {fileID: 401260283}
-  gameControlsContainer: {fileID: 323044764}
+  gameControlsContainer: {fileID: 0}
 --- !u!114 &627131076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,6 +1197,7 @@ GameObject:
   - component: {fileID: 1926079639}
   - component: {fileID: 1926079638}
   - component: {fileID: 1926079640}
+  - component: {fileID: 1926079641}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -1246,8 +1241,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6659e4f8735114058b726c4279ed5216, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: cb41e4c52e3c5b244b28687b0a11f1bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1285,7 +1280,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f521f79fbf0a343a3a0c9869b3d047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToSceneName: Room 3
+  ToSceneName: InsideTrain
+--- !u!114 &1926079641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926079637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8743090b92c8340daa2fdd3a88f27aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035575256
 GameObject:
   m_ObjectHideFlags: 0
