@@ -39,6 +39,15 @@ namespace Yarn.Unity.Example {
 		public float moveSpeed = 1.0f;
 
 		// Update is called once per frame
+		private void Awake()
+		{
+			if (target == null)
+			{
+				target = GameObject.FindWithTag("Player").transform;
+			}
+			
+		}
+
 		void Update () {
 			if (target == null) {
 				return;

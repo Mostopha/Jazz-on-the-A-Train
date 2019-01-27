@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 6209223631114170759}
   - component: {fileID: 6209223631114170760}
   - component: {fileID: 6209223631114170758}
-  - component: {fileID: 1267464899}
+  - component: {fileID: 6729045046606158494}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -907,7 +907,7 @@ MonoBehaviour:
   InventoryWindow: {fileID: 6209223631801620672}
   ButtonText: {fileID: 6209223632191605795}
   button: {fileID: 6209223631400944017}
---- !u!114 &1267464899
+--- !u!114 &6729045046606158494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1989,8 +1989,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
-  m_SizeDelta: {x: 278.5, y: 226.9}
+  m_AnchoredPosition: {x: -8, y: -10}
+  m_SizeDelta: {x: 301.7, y: 245.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6209223631801620733
 CanvasRenderer:
