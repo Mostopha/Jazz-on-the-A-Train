@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{C19D70FD-615B-0617-0569-1F6D7EFF70EE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneChanger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameState.cs">
     <Files>
-      <File FileName="Assets/Yarn Spinner/Examples/Demo Scripts/ExampleDialogueUI.cs" Line="316" Column="25" />
       <File FileName="Assets/Yarn Spinner/Code/DialogueRunner.cs" Line="184" Column="41" />
-      <File FileName="Assets/Yarn Spinner/Examples/Demo Scripts/NPC.cs" Line="1" Column="1" />
-      <File FileName="Assets/Yarn Spinner/Examples/Demo Scripts/ExampleVariableStorage.cs" Line="34" Column="60" />
       <File FileName="Assets/Scripts/SceneChanger.cs" Line="1" Column="1" />
+      <File FileName="Assets/JazzOnTheA/Demo Scripts/NPC.cs" Line="82" Column="10" />
+      <File FileName="Assets/JazzOnTheA/Demo Scripts/PlayerCharacter.cs" Line="63" Column="11" />
+      <File FileName="Assets/Dialogue/IndividualDialogue/California_California.json" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Inventory.cs" Line="64" Column="14" />
+      <File FileName="Assets/Scripts/GameState.cs" Line="5" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
