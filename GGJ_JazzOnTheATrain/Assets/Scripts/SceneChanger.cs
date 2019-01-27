@@ -33,7 +33,7 @@ public class SceneChanger : MonoBehaviour
         }
         else
         {
-            print("no door to go back to");
+            print("no door to go back through");
         }
     }
 
@@ -62,53 +62,11 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
-    public void CheckForSceneChange(PlayerCharacter player)
+    public void SwitchToScene(string sceneName)
     {
-        if (player.IsInteracting())
-        {
-            float playerX = player.transform.position.x;
-            Door[] doors = Object.FindObjectsOfType<Door>();
-            foreach (Door door in doors)
-            {
-                if (IsInRangeOfDoor(playerX, door))
-                {
-                    EnterDoor(door);
-                }
-            }
-        }
-    }
-
-    private void SelectLocationFromMap(string locationStartingSceneName)
-    {
-        Door trainDoor = null;
-        Door[] doors = Object.FindObjectsOfType<Door>();
-        foreach (Door door in doors)
-        {
-            if (!door.ToSceneName.Contains("Train"))
-            {
-                trainDoor = door;
-            }
-        }
-
-        trainDoor.ToSceneName = locationStartingSceneName;
-    }
-
-    private void EnterDoor(Door door)
-    {
-        print("switching to scene" + door.ToSceneName);
+        print("switching to scene" + sceneName);
 
         GameState.get().trackEvent(new GameEvent("Exit Scene", SceneManager.GetActiveScene().name));
-        SceneManager.LoadScene(door.ToSceneName);
-    }
-
-    private bool IsInRangeOfDoor(float playerX, Door door)
-    {
-        print("distance: " + Math.Abs(door.transform.position.x - playerX));
-        return Math.Abs(door.transform.position.x - playerX) < 1.5;
-    }
-
-    public static SceneChanger getSceneChanger()
-    {
-        return sceneChanger;
+        SceneManager.LoadScene(sceneName);
     }
 }
