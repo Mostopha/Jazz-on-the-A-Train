@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{3b271f89-834d-4027-8629-d70cedd8d146}">
+        <property name="assetPath">
+            <value>NOLA_Take The A Train in NOLA.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>301.97551020408162</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a4d685da-3227-4a35-a4b3-4eb3ce9f0e40}</destination>
+        </relationship>
+    </object>
+</objects>

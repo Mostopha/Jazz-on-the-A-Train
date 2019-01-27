@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 9b3c8ac3d81a45343bcce8a87bc4bb33
   - enabled: 1
-    path: Assets/Scenes/California.unity
+    path: Assets/Scenes/California 1.unity
     guid: 9f7870f3c01804ea4a33f4e4237d9293
   - enabled: 1
     path: Assets/Scenes/NewYork1.unity
@@ -54,6 +54,15 @@ EditorBuildSettings:
     path: Assets/Scenes/NewYork2.unity
     guid: d1cab6c7b074df8429ec70dd9b2976cb
   - enabled: 1
-    path: Assets/Scenes/California.unity
+    path: Assets/Scenes/NewOrleans2.unity
+    guid: 190934b7184def841b819e371c4a6c68
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/87c98d68ab6312e4f910751111c48620
     guid: 87c98d68ab6312e4f910751111c48620
+  - enabled: 1
+    path: Assets/Scenes/YOUWIN.unity
+    guid: b88b1eaf82356d7498406c6312e3611f
+  - enabled: 1
+    path: Assets/Scenes/BADEND.unity
+    guid: a67cc3a9cab91cf41aad98a21d445eac
   m_configObjects: {}
