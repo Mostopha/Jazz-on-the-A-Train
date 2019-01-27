@@ -10,7 +10,6 @@ public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger sceneChanger;
 
-    private Room room;
 
     // Start is called before the first frame update
     void Start()
