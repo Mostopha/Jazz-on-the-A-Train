@@ -101,15 +101,14 @@ namespace Yarn.Unity.Example
 
 
             // Detect if we want to start a conversation
-
-            SceneChanger.getSceneChanger().CheckForSceneChange(this);
-            if (IsInteracting())
+            
+            if (IsStartingInteraction())
             {
                 CheckForNearbyNPC();
             }
         }
 
-        public bool IsInteracting()
+        public bool IsStartingInteraction()
         {
             KeyCode[] interactionKeys =
             {
