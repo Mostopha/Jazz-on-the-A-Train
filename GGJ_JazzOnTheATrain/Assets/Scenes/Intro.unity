@@ -227,24 +227,6 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 4eee64e084df54c6a929026d4552502f, type: 3}
   - name: happy
     sprite: {fileID: 21300000, guid: cd962023ce1d84e8aa5f5a552151711c, type: 3}
---- !u!1 &500230534 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6209223630622578446, guid: a506e3fc805847c48b93eb989639217f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6209223631608740511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &500230540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500230534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bafa89e72b15f94480f1c165456627c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &515286082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1113,6 @@ GameObject:
   - component: {fileID: 1926079639}
   - component: {fileID: 1926079638}
   - component: {fileID: 1926079640}
-  - component: {fileID: 1926079641}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1215,18 +1196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ToSceneName: UnionStation
---- !u!114 &1926079641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926079637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8743090b92c8340daa2fdd3a88f27aea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2035575256
 GameObject:
   m_ObjectHideFlags: 0
