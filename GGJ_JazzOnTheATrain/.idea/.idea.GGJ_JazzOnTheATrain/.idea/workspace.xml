@@ -18,12 +18,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="6" />
+          <entry key="cs" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="6" />
+          <entry key="C#" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -49,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-458">
@@ -70,6 +70,20 @@
                 <marker date="1548573508440" expanded="true" signature="1777:1944" ph="{...}" />
                 <marker date="1548573508440" expanded="true" signature="1812:1869" ph="{...}" />
                 <marker date="1548573508440" expanded="true" signature="1882:1938" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CollapsedTrainMap.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1548570802764" expanded="false" signature="6:44" ph="..." />
+                <marker date="1548570802764" expanded="true" signature="103:291" ph="{...}" />
+                <marker date="1548570802764" expanded="true" signature="224:289" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,6 +157,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollapsedTrainMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JazzOnTheA/Demo Scripts/PlayerCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -227,12 +242,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548566157702</updated>
-      <workItem from="1548566165213" duration="3690000" />
+      <workItem from="1548566165213" duration="4233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3690000" />
+    <option name="totallyTimeSpent" value="4233000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,6 +377,18 @@
             <marker date="1548573508440" expanded="true" signature="1777:1944" ph="{...}" />
             <marker date="1548573508440" expanded="true" signature="1812:1869" ph="{...}" />
             <marker date="1548573508440" expanded="true" signature="1882:1938" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CollapsedTrainMap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1548570802764" expanded="false" signature="6:44" ph="..." />
+            <marker date="1548570802764" expanded="true" signature="103:291" ph="{...}" />
+            <marker date="1548570802764" expanded="true" signature="224:289" ph="{...}" />
           </folding>
         </state>
       </provider>
