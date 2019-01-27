@@ -1,0 +1,92 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "RagTime: Jazz, honey, hope you ain't misbehavin' down there in Kansas.\r\n\r\n\r\n[[Jazz: You know it, pops. |Intro1]]\r\n\r\n[[Jazz: Can't be staying out late. |Intro1]]",
+		"position": {
+			"x": -26,
+			"y": 340
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro1",
+		"tags": "",
+		"body": "RagTime: That's what I like to hear! When you coming back to New Orleans?\r\n\r\n\r\n[[Jazz: I'll be down by Christmas time|Intro2]]\r\n",
+		"position": {
+			"x": 252,
+			"y": 352
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro2",
+		"tags": "",
+		"body": "RagTime: Your mother and I can't wait to see you. But you better not come home like another damn dewdropper. Bring something nice!\r\n\r\n[[Jazz: Something nice, pops?|Intro3]]",
+		"position": {
+			"x": 512,
+			"y": 350
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro3",
+		"tags": "",
+		"body": "RagTime: Yeah something nice - you know? Something hot, something cool, with a a bit of swing thrown in for good measure|.\r\n\r\nYou get me?\r\n\r\n\r\n[[Jazz: Something hot?|hotJazz]]\r\n[[Jazz: Something cool?|coolJazz]]\r\n[[Jazz: A bit of swing?|swingJazz]]\r\n[[Jazz: Of course, pops|Intro4]]",
+		"position": {
+			"x": 317,
+			"y": 628
+		},
+		"colorID": 0
+	},
+	{
+		"title": "hotJazz",
+		"tags": "",
+		"body": "Good old New Orleans Jazz! Hot, brassy, fun.\r\n\r\nCan't go wrong with it.\r\n\r\n[[Jazz: Gotcha|DoYouUnderstand]]",
+		"position": {
+			"x": 876,
+			"y": 619
+		},
+		"colorID": 0
+	},
+	{
+		"title": "coolJazz",
+		"tags": "",
+		"body": "Jazz and fun under the sun. If you stop by Cali, a tan better not be all you're getting.\n\n[[Jazz: I see|DoYouUnderstand]]\n",
+		"position": {
+			"x": -8,
+			"y": 614
+		},
+		"colorID": 0
+	},
+	{
+		"title": "swingJazz",
+		"tags": "",
+		"body": "Swing music, bebop and all the good stuff. \r\n\r\nBe sure to check out the jazz scene in the Big Apple when you swing by.\r\n\r\n[[Jazz: I see|DoYouUnderstand]]",
+		"position": {
+			"x": 779,
+			"y": 343
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro4",
+		"tags": "",
+		"body": "RagTime: I'll see you on the 25th then. I am sure I don't need to tell you what train to catch now do I?\r\n\r\n[[Take the A Train|TrainHub]]\r\n<<set $day = 23>>\r\n<<set $NY = false>>\r\n<<set $NO = false>>\r\n<<set $CA = false>>\r\n<<set $bebop = false>>\r\n<<set $swing = false>>\r\n<<set $cool = false>>\r\n<<set $vanilla = false>>\r\n<<set $inventory = 0>>\r\n\r\n",
+		"position": {
+			"x": 606,
+			"y": 622
+		},
+		"colorID": 0
+	},
+	{
+		"title": "DoYouUnderstand",
+		"tags": "",
+		"body": "You get me, Jazz?\r\n\r\n\r\n[[Jazz: Something hot?|hotJazz]]\r\n[[Jazz: Something cool?|coolJazz]]\r\n[[Jazz: A bit of swing?|swingJazz]]\r\n[[Jazz: Of course, pops|Intro4]]",
+		"position": {
+			"x": -417,
+			"y": 498
+		},
+		"colorID": 0
+	}
+]
