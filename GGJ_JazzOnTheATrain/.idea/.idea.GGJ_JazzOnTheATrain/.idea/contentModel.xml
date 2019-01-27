@@ -348,6 +348,7 @@
           <e p="Inventory.cs" t="Include" />
           <e p="PlayerProximityActivated.cs" t="Include" />
           <e p="SceneChanger.cs" t="Include" />
+          <e p="ShootingStars.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
