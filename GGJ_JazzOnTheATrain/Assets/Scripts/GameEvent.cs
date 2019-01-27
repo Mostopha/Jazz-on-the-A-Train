@@ -4,12 +4,12 @@ using UnityEditor;
 public class GameEvent
 {
 
-    public GameEvent(string type, string sceneName)
+    public GameEvent(string type, string argument)
     {
         this.type = type;
-        this.sceneName = sceneName;
+        this.argument = argument;
     }
 
     public string type { get; }
-    public string sceneName { get; }
+    public string argument { get; }
 }

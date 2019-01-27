@@ -31,7 +31,7 @@ public class GameState
         switch (gameEvent.type)
         {
             case "Exit Scene":
-                this.previousSceneName = gameEvent.sceneName;
+                this.previousSceneName = gameEvent.argument;
                 break;
             default:
                 break;

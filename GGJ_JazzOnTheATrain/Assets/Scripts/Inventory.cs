@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    bool[] ingrediants;
-    public GameObject[] ingrediantUI;
+    bool[] ingredients;
+    public GameObject[] ingredientUI;
     public GameObject InventoryWindow;
     public Text ButtonText;
     bool InventoryActive;
@@ -15,7 +15,7 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ingrediants = new bool[ingrediantUI.Length];
+        ingredients = new bool[ingredientUI.Length];
         ResetList();
     }
 
@@ -27,9 +27,9 @@ public class Inventory : MonoBehaviour
         if (InventoryActive)
         {
             ButtonText.text = "Close";
-            for (int i = 0; i < ingrediantUI.Length; i++)
+            for (int i = 0; i < ingredientUI.Length; i++)
             {
-                ingrediantUI[i].SetActive(ingrediants[i]);
+                ingredientUI[i].SetActive(ingredients[i]);
             }
         }
         else
@@ -46,9 +46,9 @@ public class Inventory : MonoBehaviour
 
     private void ResetList()
     {
-        for (int i = 0; i < ingrediants.Length; i++)
+        for (int i = 0; i < ingredients.Length; i++)
         {
-            ingrediants[i] = false;
+            ingredients[i] = false;
         }
     }
 
@@ -72,7 +72,7 @@ public class Inventory : MonoBehaviour
                 break;
         }
 
-        ingrediants[index] = true;
+        ingredients[index] = true;
     }
 
     public void ToggleInventory()
