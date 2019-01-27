@@ -11,8 +11,9 @@ public class Inventory : MonoBehaviour
     public Text ButtonText;
     public GameObject button;
     bool InventoryActive;
+    public FMOD_StudioEventEmitter sceneEmitter;
+    public FMOD_StudioEventEmitter inventoryEmitter;
 
-    public static bool NYVisited;
     public static bool CAVisited;
 
     // Start is called before the first frame update
@@ -66,13 +67,72 @@ public class Inventory : MonoBehaviour
 
     public void ToggleInventory()
     {
+     
         if (InventoryActive)
         {
-            InventoryActive = false;
+            CloseInventory();
         }
         else
         {
-            InventoryActive = true;
+           OpenInventory();
         }
     }
+
+    public void CloseInventory()
+    {
+        InventoryActive = false;
+
+        GetSceneEmitter().gameObject.SetActive(InventoryActive);
+        GetInventoryEmitter().gameObject.SetActive(!InventoryActive);
+    }
+
+
+
+
+    public void OpenInventory()
+    {
+        InventoryActive = true;
+        GetSceneEmitter().gameObject.SetActive(!InventoryActive);
+        GetInventoryEmitter().gameObject.SetActive(InventoryActive);
+    }
+    FMOD_StudioEventEmitter GetSceneEmitter()
+    {
+        if (sceneEmitter == null)
+        {
+
+            FMOD_StudioEventEmitter[] emitters = Object.FindObjectsOfType<FMOD_StudioEventEmitter>();
+            foreach (FMOD_StudioEventEmitter emitter in emitters)
+            {
+                if (!emitter.gameObject.tag.Equals("InventoryAudio"))
+                {
+                    sceneEmitter = emitter;
+                    break;
+                }
+            }
+
+        }
+
+        return sceneEmitter;
+    }
+
+    FMOD_StudioEventEmitter GetInventoryEmitter()
+    {
+        if (inventoryEmitter == null)
+        {
+
+            FMOD_StudioEventEmitter[] emitters = Object.FindObjectsOfType<FMOD_StudioEventEmitter>();
+            foreach (FMOD_StudioEventEmitter emitter in emitters)
+            {
+                if (emitter.gameObject.tag.Equals("InventoryAudio"))
+                {
+                    inventoryEmitter = emitter;
+                    break;
+                }
+            }
+
+        }
+
+        return inventoryEmitter;
+    }
+
 }

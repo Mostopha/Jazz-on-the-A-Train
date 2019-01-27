@@ -11,10 +11,14 @@ public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger sceneChanger;
 
+    private Dictionary<string, string> musicMapping = new Dictionary<string, string>();
 
+    
     // Start is called before the first frame update
     void Start()
     {
+
+        musicMapping.Add("New York 1", " ");
         print("current scene is now " + SceneManager.GetActiveScene().name);
         sceneChanger = this;
         print("Previous scene was: " + GameState.get().previousSceneName);
