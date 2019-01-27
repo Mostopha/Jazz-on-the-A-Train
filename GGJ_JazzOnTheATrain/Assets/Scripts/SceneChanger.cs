@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn.Unity.Example;
 using Object = UnityEngine.Object;
+using Yarn.Unity;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -62,6 +63,7 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+    [YarnCommand("Switch")]
     public void SwitchToScene(string sceneName)
     {
         print("switching to scene" + sceneName);

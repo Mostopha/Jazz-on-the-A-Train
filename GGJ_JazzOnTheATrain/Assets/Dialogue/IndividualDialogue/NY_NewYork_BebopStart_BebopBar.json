@@ -2,10 +2,10 @@
 	{
 		"title": "NewYork",
 		"tags": "",
-		"body": "<<if $hasTalked = false>>\nHere to take a bite out of the Big Apple?\n\n[[Jazz: I guess|NewYork3]]\n<<else>>\nSo you ready to dance, doll?\n\n[[Jazz: Ab-so-lute-ly|StaySwing]]\n<<endif>>",
+		"body": "<<if $hasTalked = false>>\nHere to take a bite out of the Big Apple?\n\n[[Jazz: I guess|NewYork3]]\n<<set $hasTalked = true>>\n<<else>>\nSo you ready to dance, doll?\n\n[[Jazz: Ab-so-lute-ly|StaySwing]]\n\n[[Jazz: Not feeling it|DislikeSwing]]\n<<endif>>",
 		"position": {
-			"x": -556,
-			"y": 1116
+			"x": -577,
+			"y": 1135
 		},
 		"colorID": 0
 	},
@@ -40,9 +40,9 @@
 		"colorID": 0
 	},
 	{
-		"title": "BebopBar",
+		"title": "BebopStart2",
 		"tags": "",
-		"body": "Complex harmonies. Complex chord progressions. Improvisatory and spontaneous.\n\nSpike: You like it, cool cat? This is Bebop!!\n\n[[Jazz: I love it!|BebopWin]]\n\n[[Jazz: I can't dance to this|BebopAlmostLoss]]",
+		"body": "<<Switch Manager NewYork2>>\n\nComplex harmonies. Complex chord progressions. Improvisatory and spontaneous.\n\nSpike: You like it, cool cat? This is Bebop!!\n\n[[Jazz: I love it!|BebopWin]]\n\n[[Jazz: I can't dance to this|BebopAlmostLoss]]",
 		"position": {
 			"x": 267,
 			"y": 1652
@@ -62,7 +62,7 @@
 	{
 		"title": "SwingFail",
 		"tags": "",
-		"body": "Dapper Gentleman: A shame, really. Well, I have to go see a man about a dog. Be seeing ya.\n\nThere doesn't seem to be anything else for you to do here.\n\n",
+		"body": "A shame, really. Well, I have to go see a man about a dog. Be seeing ya.\n\nThere doesn't seem to be anything else for you to do here.\n\n",
 		"position": {
 			"x": -179,
 			"y": 1611
@@ -74,8 +74,8 @@
 		"tags": "",
 		"body": "Spike: Aw Rhatz! That's a disappointment, if ever there was one. \n\nWell, you have a good evening there, pal.\n\nThe energetic individual walked away.\n\nThere was nothing left for you to do here.\n\n",
 		"position": {
-			"x": 361,
-			"y": 2114
+			"x": 856,
+			"y": 1969
 		},
 		"colorID": 0
 	},
@@ -102,7 +102,7 @@
 	{
 		"title": "GetSwing",
 		"tags": "",
-		"body": "You receive THE SPIRIT OF SWING\n\nDapper Gentleman: Something tells me you got other places you gotta be, doll. \nDapper Gentleman: You take care now, you hear?\n\n\n<<set $inventory = $inventory+1>>\n<<set $swing = true>>\n<<Get Manager Swing>>\n\n\n",
+		"body": "You receive THE SPIRIT OF SWING\n\nSomething tells me you got other places you gotta be, doll. \nYou take care now, you hear?\n\n\n<<set $inventory = $inventory+1>>\n<<set $swing = true>>\n<<Get Manager Swing>>\n\n\n",
 		"position": {
 			"x": -476,
 			"y": 1605
@@ -112,7 +112,7 @@
 	{
 		"title": "BebopStart",
 		"tags": "",
-		"body": "You wanna quit this overpriced juice-joint and go listen to some real music, honey?\n\n[[Jazz: Sure!|BebopBar]]\n\n[[Jazz: You're not shady at all|BebopNo]]",
+		"body": "You wanna quit this overpriced juice-joint and go listen to some real music, honey?\n\n[[Jazz: Sure!|BebopStart2]]\n\n[[Jazz: You're not shady at all|BebopNo]]",
 		"position": {
 			"x": 515,
 			"y": 1294
@@ -126,6 +126,16 @@
 		"position": {
 			"x": 580,
 			"y": 1700
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BebopBar",
+		"tags": "",
+		"body": "You like it, cool cat? This is Bebop!!\n\n[[Jazz: I love it!|BebopWin]]\n\n[[Jazz: I can't dance to this|BebopAlmostLoss]]",
+		"position": {
+			"x": 881,
+			"y": 1559
 		},
 		"colorID": 0
 	}

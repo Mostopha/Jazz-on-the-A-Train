@@ -112,7 +112,7 @@
 	{
 		"title": "BebopStart",
 		"tags": "",
-		"body": "You wanna quit this overpriced juice-joint and go listen to some real music, honey?\n\n[[Jazz: Sure!|BebopBar]]\n\n[[Jazz: You're not shady at all|BebopNo]]",
+		"body": "<<Switch Manager NewYork2>>\n\nYou wanna quit this overpriced juice-joint and go listen to some real music, honey?\n\n[[Jazz: Sure!|BebopBar]]\n\n[[Jazz: You're not shady at all|BebopNo]]",
 		"position": {
 			"x": 515,
 			"y": 1294
