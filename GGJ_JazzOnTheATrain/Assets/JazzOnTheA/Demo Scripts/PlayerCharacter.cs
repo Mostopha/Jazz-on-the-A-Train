@@ -32,6 +32,7 @@ namespace Yarn.Unity.Example
 {
     public class PlayerCharacter : MonoBehaviour
     {
+       
         public float minPosition = -5.3f;
         public float maxPosition = 5.3f;
 
@@ -79,9 +80,8 @@ namespace Yarn.Unity.Example
         // Update is called once per frame
         void Update()
         {
-            DialogueRunner dialogRunner = FindObjectOfType<DialogueRunner>();
-            // Remove all player control when we're in dialogue
-            if (dialogRunner != null && dialogRunner.isDialogueRunning == true)
+            // Remove all player control when we're in dialogue, map, etc.
+            if (IsIntrusiveGuiOverlayVisible())
             {
                 return;
             }
@@ -98,18 +98,35 @@ namespace Yarn.Unity.Example
             newPosition.x = Mathf.Clamp(newPosition.x, minPosition, maxPosition);
 
             transform.position = newPosition;
+        }
 
+        private bool IsIntrusiveGuiOverlayVisible()
+        {
 
-            // Detect if we want to start a conversation
-            
-            if (IsStartingInteraction())
+            DialogueRunner dialogRunner = FindObjectOfType<DialogueRunner>();
+            if (dialogRunner != null && dialogRunner.isDialogueRunning == true)
             {
-                CheckForNearbyNPC();
+                return true;
             }
+
+            IntrusiveGuiOverlay[] intrusiveOverlays = FindObjectsOfType<IntrusiveGuiOverlay>();
+            foreach (IntrusiveGuiOverlay intrusiveGuiOverlay in intrusiveOverlays)
+            {
+                if (intrusiveGuiOverlay.isActiveAndEnabled)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public bool IsStartingInteraction()
         {
+            if (IsIntrusiveGuiOverlayVisible())
+            {
+                return false;
+            }
+
             KeyCode[] interactionKeys =
             {
                 KeyCode.Return,
@@ -131,38 +148,6 @@ namespace Yarn.Unity.Example
         }
 
 
-        public void CheckForNearbyNPC()
-        {
-            // Find all DialogueParticipants, and filter them to
-            // those that have a Yarn start node and are in range; 
-            // then start a conversation with the first one
-            var allParticipants = new List<NPC>(FindObjectsOfType<NPC>());
-            var target = allParticipants.Find(delegate(NPC p)
-            {
-                return string.IsNullOrEmpty(p.talkToNode) == false && // has a conversation node?
-                       (p.transform.position - this.transform.position) // is in range?
-                       .magnitude <= interactionRadius;
-            });
-            if (target != null)
-            {
-                Debug.Log(target.characterName);
-                // Kick off the dialogue at this node.
-                FindObjectOfType<DialogueRunner>().StartDialogue(target.talkToNode);
-
-                Yarn.Value v = new Yarn.Value(true);
-                FindObjectOfType<ExampleVariableStorage>().SetValue("$happy", v);
-                Yarn.Value b = FindObjectOfType<ExampleVariableStorage>().GetValue("$happy");
-                Debug.Log(b.type);
-                if (b.type == Yarn.Value.Type.Bool)
-                {
-                    bool boolean = b.AsBool;
-                    Debug.Log(boolean);
-                }
-                //Yarn.Value c = FindObjectOfType<ExampleVariableStorage>().GetValue("$should_see_sally"); 
-
-                //Debug.Log(c);	
-            }
-        }
 
         public void moveTo(float positionX)
         {

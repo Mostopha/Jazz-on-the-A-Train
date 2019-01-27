@@ -1,13 +1,13 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
-public class TrainMap : MonoBehaviour
+public class ExpandedTrainMap : IntrusiveGuiOverlay
 {
-    public GameObject TrainMapGui;
-    public GameObject CollapsedMap;
+    Door trainDoor = null;
 
     public void onClick(Button uiButton)
     {
@@ -35,18 +35,7 @@ public class TrainMap : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        TrainMapGui.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-//        CollapsedMap.transform.position.x
-    }
-
-    public void SelectLocationFromMap(string locationStartingSceneName)
-    {
-        Door trainDoor = null;
+        this.gameObject.SetActive(false);
         Door[] doors = FindObjectsOfType<Door>();
         foreach (Door door in doors)
         {
@@ -56,13 +45,20 @@ public class TrainMap : MonoBehaviour
             }
         }
 
-        trainDoor.ToSceneName = locationStartingSceneName;
+       Button[] cityButtons =  this.GetComponentsInChildren<Button>();
+       foreach (Button cityButton in cityButtons)
+       {
+           cityButton.onClick.RemoveAllListeners();
+           cityButton.onClick.AddListener(delegate()
+           {
+               onClick(cityButton);
+           });
+       }
     }
 
 
-    private bool IsInRangeOfDoor(float playerX, Door door)
+    public void SelectLocationFromMap(string locationStartingSceneName)
     {
-        print("distance: " + Math.Abs(door.transform.position.x - playerX));
-        return Math.Abs(door.transform.position.x - playerX) < 1.5;
+        trainDoor.ToSceneName = locationStartingSceneName;
     }
 }

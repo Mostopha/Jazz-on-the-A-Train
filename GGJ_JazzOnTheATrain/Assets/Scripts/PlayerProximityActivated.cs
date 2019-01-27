@@ -12,13 +12,13 @@ public abstract class PlayerProximityActivated : MonoBehaviour
     public abstract void OnActivate();
     private PlayerCharacter playerCharacter;
 
-    public void Start()
-    {
-        PlayerCharacter playerCharacter = FindObjectOfType<PlayerCharacter>();
-    }
-
     public void Update()
     {
+        if (playerCharacter == null)
+        {
+            playerCharacter = FindObjectOfType<PlayerCharacter>();
+        }
+
         if (playerCharacter.IsStartingInteraction() && this.IsInRangeOfPlayer())
         {
             this.OnActivate();
