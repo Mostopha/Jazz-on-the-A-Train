@@ -113,7 +113,6 @@ namespace Yarn.Unity.Example
         {
             KeyCode[] interactionKeys =
             {
-                KeyCode.Mouse1,
                 KeyCode.Return,
                 KeyCode.Space,
                 KeyCode.O
