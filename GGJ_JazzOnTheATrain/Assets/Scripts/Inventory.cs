@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] ingredientUI;
     public GameObject InventoryWindow;
     public Text ButtonText;
+    public GameObject button;
     bool InventoryActive;
 
     public static bool NYVisited;
@@ -19,14 +20,12 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         ingredients = new bool[ingredientUI.Length];
-        ResetList();
+       // ResetList();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        InventoryWindow.SetActive(InventoryActive);
         if (InventoryActive)
         {
             ButtonText.text = "Close";
@@ -38,6 +37,17 @@ public class Inventory : MonoBehaviour
         else
         {
             ButtonText.text = "Inventory";
+        }
+
+        if (IsIntrusiveGuiOverlayVisible())
+        {
+            button.SetActive(false);
+            InventoryWindow.SetActive(false);
+        }
+        else
+        {
+            button.SetActive(true);
+            InventoryWindow.SetActive(InventoryActive);
         }
 
         /*if (Input.GetKeyDown(KeyCode.A))
@@ -89,5 +99,25 @@ public class Inventory : MonoBehaviour
         {
             InventoryActive = true;
         }
+    }
+
+    bool IsIntrusiveGuiOverlayVisible()
+    {
+
+        DialogueRunner dialogRunner = FindObjectOfType<DialogueRunner>();
+        if (dialogRunner != null && dialogRunner.isDialogueRunning == true)
+        {
+            return true;
+        }
+
+        IntrusiveGuiOverlay[] intrusiveOverlays = FindObjectsOfType<IntrusiveGuiOverlay>();
+        foreach (IntrusiveGuiOverlay intrusiveGuiOverlay in intrusiveOverlays)
+        {
+            if (intrusiveGuiOverlay.isActiveAndEnabled)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
