@@ -18,6 +18,38 @@ public class SceneChanger : MonoBehaviour
         print("current scene is now " + SceneManager.GetActiveScene().name);
         sceneChanger = this;
         print("Previous scene was: " + GameState.get().previousSceneName);
+        MovePlayerToDoorTheyCameFrom();
+    }
+
+    private void MovePlayerToDoorTheyCameFrom()
+    {
+        PlayerCharacter player = FindObjectOfType<PlayerCharacter>();
+        Door doorBack = FindDoorToScene(GameState.get().previousSceneName);
+        if (doorBack != null)
+        {
+            print("positioning at door");
+            print(doorBack.gameObject);
+            print(player);
+            player.moveTo(doorBack.gameObject.transform.position.x);
+        }
+        else
+        {
+            print("no door to go back to");
+        }
+    }
+
+    private Door FindDoorToScene(string previousSceneName)
+    {
+        Door[] doors = Object.FindObjectsOfType<Door>();
+        foreach (Door door in doors)
+        {
+            if (door.ToSceneName.Equals(previousSceneName))
+            {
+                return door;
+            }
+        }
+
+        return null;
     }
 
     // Update is called once per frame

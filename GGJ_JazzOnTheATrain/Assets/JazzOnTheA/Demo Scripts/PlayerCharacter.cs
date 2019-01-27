@@ -53,10 +53,11 @@ namespace Yarn.Unity.Example {
 
 		
 		// Update is called once per frame
-		void Update () {
-
-			// Remove all player control when we're in dialogue
-			if (FindObjectOfType<DialogueRunner>().isDialogueRunning == true) {
+		void Update ()
+        {
+            DialogueRunner dialogRunner = FindObjectOfType<DialogueRunner>();
+            // Remove all player control when we're in dialogue
+            if (dialogRunner != null && dialogRunner.isDialogueRunning == true) {
 				return;
 			}
 
@@ -136,7 +137,14 @@ namespace Yarn.Unity.Example {
 				//Debug.Log(c);	
 			}
 		}
-	}
+
+        public void moveTo(float positionX)
+        {
+            var newPosition = transform.position;
+            newPosition.x = positionX;
+            transform.position = newPosition;
+        }
+    }
 
 
 
