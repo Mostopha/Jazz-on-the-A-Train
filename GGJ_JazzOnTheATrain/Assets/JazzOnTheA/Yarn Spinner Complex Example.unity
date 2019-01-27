@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 463211626}
   - component: {fileID: 463211627}
   m_Layer: 0
-  m_Name: Sally
+  m_Name: RagTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,8 +620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Sally
-  talkToNode: Sally
+  characterName: 
+  talkToNode: Start
   scriptToLoad: {fileID: 0}
 --- !u!212 &463211627
 SpriteRenderer:
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fading: 0
   sourceText:
-  - {fileID: 4900000, guid: 6c4e9acb103274949ae415f4e8c2a362, type: 3}
+  - {fileID: 4900000, guid: 6589fc0e600c4c14ea861bf2ae28fe17, type: 3}
   - {fileID: 4900000, guid: 3b228e13166124cce95c83ad7e734183, type: 3}
   variableStorage: {fileID: 627131074}
   dialogueUI: {fileID: 627131075}

@@ -14,17 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114633178652472418}
-  - {fileID: 114755374478538298}
+  - {fileID: 114322233841767896}
   EditorEvents:
   - {fileID: 114847606170441048}
   MasterBanks:
   - {fileID: 114406710381507148}
   - {fileID: 114755374478538298}
+  - {fileID: 114322233841767896}
   StringsBanks:
   - {fileID: 114492025515843066}
   - {fileID: 114633178652472418}
-  stringsBankWriteTime: 636841231453400354
+  stringsBankWriteTime: 636841231681150128
   cacheVersion: 3
+--- !u!114 &114322233841767896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitKrakenClones\JazzOnTheATrain\Jazz-on-the-A-Train\GGJ_JazzOnTheATrain\Fmod\JazzOnTheTrain\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636841231681658765
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 4332000
+  Exists: 1
 --- !u!114 &114406710381507148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Fmod\JazzOnTheTrain\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636841231453400354
+  lastModified: 636841231681150128
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -102,7 +123,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 4332000
-  Exists: 1
+  Exists: 0
 --- !u!114 &114847606170441048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +139,7 @@ MonoBehaviour:
   Path: event:/Train
   guid: 6dff88fa1ab928499754b72c74509aa0
   Banks:
-  - {fileID: 114755374478538298}
+  - {fileID: 114322233841767896}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
