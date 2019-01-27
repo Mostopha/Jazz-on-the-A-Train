@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{f6e88c38-b455-4ef8-b50e-18e1a7e38902}">
+        <property name="name">
+            <value>WC3</value>
+        </property>
+        <relationship name="folder">
+            <destination>{fe9b55e6-a935-43c1-bdae-a53c634a7b27}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{3fb36418-bd66-45e7-aa39-0b651f5aa1f2}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{3fb36418-bd66-45e7-aa39-0b651f5aa1f2}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{90c33e28-5651-455d-87d7-201f086394a7}">
+        <property name="assetPath">
+            <value>Bebop_Charlie Parker - Ornithology.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>184.79020408163265</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a4d685da-3227-4a35-a4b3-4eb3ce9f0e40}</destination>
+        </relationship>
+    </object>
+</objects>

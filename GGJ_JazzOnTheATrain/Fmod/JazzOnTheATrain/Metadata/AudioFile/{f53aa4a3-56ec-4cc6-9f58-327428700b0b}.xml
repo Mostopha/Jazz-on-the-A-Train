@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f53aa4a3-56ec-4cc6-9f58-327428700b0b}">
+        <property name="assetPath">
+            <value>WC_BARNEY KESSEL_ SHELLY MANNE _ RAY BROWN=POLL WINNERS THREE - Soft Winds.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>253.85795918367347</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a4d685da-3227-4a35-a4b3-4eb3ce9f0e40}</destination>
+        </relationship>
+    </object>
+</objects>

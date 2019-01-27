@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{cbfb0122-b905-4799-bb14-b837b94a3360}">
+        <property name="name">
+            <value>NOLA4</value>
+        </property>
+        <relationship name="folder">
+            <destination>{fe9b55e6-a935-43c1-bdae-a53c634a7b27}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{fd9f7581-ea34-49c4-b11b-faa464e7e38e}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{fd9f7581-ea34-49c4-b11b-faa464e7e38e}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

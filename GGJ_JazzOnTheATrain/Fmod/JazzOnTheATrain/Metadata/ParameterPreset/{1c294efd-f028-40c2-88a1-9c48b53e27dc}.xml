@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{1c294efd-f028-40c2-88a1-9c48b53e27dc}">
+        <property name="name">
+            <value>Bebop2</value>
+        </property>
+        <relationship name="folder">
+            <destination>{fe9b55e6-a935-43c1-bdae-a53c634a7b27}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{f0a3e8eb-b489-46ce-acb5-f786fb84b60b}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{f0a3e8eb-b489-46ce-acb5-f786fb84b60b}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
