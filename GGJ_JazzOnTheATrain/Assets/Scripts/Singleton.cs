@@ -18,4 +18,18 @@ public class Singleton : MonoBehaviour
         }
         DontDestroyOnLoad(instance);
     }
+
+    private void Update()
+    {
+        Reset();
+    }
+
+    private void Reset()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Destroy(this.gameObject);
+            SceneChanger.sceneChanger.SwitchToScene("Intro");
+        }
+    }
 }

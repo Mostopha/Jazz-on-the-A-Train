@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Fmod\JazzOnTheATrain\JazzOnTheATrain.fspro
-  SourceProjectPathUnformatted: Fmod\JazzOnTheATrain\JazzOnTheATrain.fspro
-  SourceBankPathUnformatted: Fmod\JazzOnTheATrain\Build
+  sourceProjectPath: Fmod/JazzOnTheATrain/JazzOnTheATrain.fspro
+  SourceProjectPathUnformatted: Fmod/JazzOnTheATrain/JazzOnTheATrain.fspro
+  SourceBankPathUnformatted: Fmod/JazzOnTheATrain/Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
