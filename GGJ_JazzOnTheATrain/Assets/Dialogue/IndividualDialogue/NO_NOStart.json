@@ -22,12 +22,12 @@
 	{
 		"title": "TalkToFriend3",
 		"tags": "",
-		"body": "Got a minute to play with an old pal?\n\n[[Jazz: I should get home|GetHome]]\n\n[[Jazz: For sure!|TalkToFriend4]]",
+		"body": "Got a minute to play with an old pal?\n\n[[Jazz: For sure!|TalkToFriend4]]\n\n[[Jazz: I should go|TalkEnd]]",
 		"position": {
 			"x": 1181,
 			"y": 1711
 		},
-		"colorID": 0
+		"colorID": 5
 	},
 	{
 		"title": "TalkToFriend4",
@@ -52,10 +52,20 @@
 	{
 		"title": "NewOrleansWin",
 		"tags": "",
-		"body": "That's how you do it! You've changed, but you still remember your roots!\n\nHere, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = false>>",
+		"body": "That's how you do it! You've changed, but you still remember your roots!\n\nHere, have this\n\nYOU HAVE RECEIVED THE SPIRIT OF JAZZ\n\nFamiliar Face: Give my regards to your folks\n\n<<set $inventory = $inventory+1>>\n<<set $vanilla = true>>",
 		"position": {
 			"x": 1473,
 			"y": 1176
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TalkEnd",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1310,
+			"y": 2004
 		},
 		"colorID": 0
 	}

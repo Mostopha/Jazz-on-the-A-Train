@@ -337,14 +337,17 @@
             <e p="FmodResonanceAudioRoom.cs" t="Include" />
           </e>
         </e>
+        <e p="Restart.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimationTest.cs" t="Include" />
+          <e p="BlackOut.cs" t="Include" />
           <e p="CollapsedTrainMap.cs" t="Include" />
           <e p="CrossSceneBehavior.cs" t="Include" />
           <e p="Door.cs" t="Include" />
           <e p="ExpandedTrainMap.cs" t="Include" />
           <e p="GameEvent.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
+          <e p="HighLightNearPlayer.cs" t="Include" />
           <e p="IntrusiveGuiOverlay.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="PlayerProximityActivated.cs" t="Include" />
@@ -352,6 +355,7 @@
           <e p="ShootingStars.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
         </e>
+        <e p="StartGame.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">
             <e p="LineBreaking Following Characters.txt" t="Include" />
